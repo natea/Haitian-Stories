@@ -1,0 +1,849 @@
+<?xml version="1.0" ?>
+<countries>
+	<country name="Cambodia">
+		<city lat="11.55" long="104.85">
+			Phnom Penh
+		</city>
+	</country>
+	<country name="Ethiopia">
+		<city lat="90.0333" long="38.75">
+			Addis Ababa
+		</city>
+		<city lat="15.2833" long="38.9167">
+			Asmara
+		</city>
+	</country>
+	<country name="Argentina">
+		<city lat="-34.5833" long="-58.4833">
+			Buenos Aires
+		</city>
+		<city lat="-31.3667" long="-64.25">
+			Cordoba
+		</city>
+		<city lat="-26.8333" long="-65.1667">
+			Tucuman
+		</city>
+	</country>
+	<country name="Bolivia">
+		<city lat="-16.5" long="-68.15">
+			La Paz
+		</city>
+	</country>
+	<country name="Ghana">
+		<city lat="5.55" long="-0.2">
+			Accra
+		</city>
+	</country>
+	<country name="Saudi Arabia">
+		<city lat="26.2833" long="50.15">
+			Dhahran
+		</city>
+		<city lat="21.4667" long="39.1667">
+			Jedda
+		</city>
+		<city lat="24.65" long="46.7">
+			Riyadh
+		</city>
+	</country>
+	<country name="Azores">
+		<city lat="38.75" long="-27.0833">
+			Lajes (Terceira)
+		</city>
+	</country>
+	<country name="Guatemala">
+		<city lat="14.6167" long="-90.5167">
+			Guatemala City
+		</city>
+	</country>
+	<country name="Germany">
+		<city lat="52.45" long="13.3">
+			Berlin (West)
+		</city>
+		<city lat="53.55" long="9.9667">
+			Hamburg
+		</city>
+		<city lat="52.4" long="9.6667">
+			Hannover
+		</city>
+		<city lat="49.5667" long="8.4667">
+			Mannheim
+		</city>
+		<city lat="48.15" long="11.5667">
+			Munich
+		</city>
+	</country>
+	<country name="Spain">
+		<city lat="41.4" long="2.15">
+			Barcelona
+		</city>
+		<city lat="40.4167" long="-3.6833">
+			Madrid
+		</city>
+		<city lat="39.4667" long="-0.3833">
+			Valencia
+		</city>
+	</country>
+	<country name="Liberia">
+		<city lat="6.3" long="-10.8">
+			Monrovia
+		</city>
+	</country>
+	<country name="Netherlands">
+		<city lat="52.3833" long="4.9167">
+			Amsterdam
+		</city>
+	</country>
+	<country name="Tanzania">
+		<city lat="-6.8333" long="39.3">
+			Dar es Salaam
+		</city>
+	</country>
+	<country name="Ivory Coast">
+		<city lat="5.3167" long="-4.0167">
+			Abidjan
+		</city>
+	</country>
+	<country name="French Guiana">
+		<city lat="4.9333" long="-52.45">
+			Cayenne
+		</city>
+	</country>
+	<country name="New Zealand">
+		<city lat="-36.85" long="174.7667">
+			Auckland
+		</city>
+		<city lat="-43.5333" long="172.6167">
+			Christchurch
+		</city>
+		<city lat="-41.2833" long="174.7667">
+			Wellington
+		</city>
+	</country>
+	<country name="Pakistan">
+		<city lat="24.8" long="66.9833">
+			Karachi
+		</city>
+		<city lat="31.5833" long="74.3333">
+			Lahore
+		</city>
+		<city lat="34.0167" long="71.5833">
+			Peshwar
+		</city>
+	</country>
+	<country name="Greenland">
+		<city lat="61.1833" long="-45.4167">
+			Narsarssuaq
+		</city>
+	</country>
+	<country name="India">
+		<city lat="23.0333" long="72.5833">
+			Ahmenabad
+		</city>
+		<city lat="12.95" long="77.6167">
+			Bangalore
+		</city>
+		<city lat="18.9" long="72.8167">
+			Bombay
+		</city>
+		<city lat="22.5333" long="88.3333">
+			Calcutta
+		</city>
+		<city lat="13.0667" long="80.25">
+			Madras
+		</city>
+		<city lat="21.15" long="79.1167">
+			Nagpur
+		</city>
+		<city lat="28.5833" long="77.2">
+			New Delhi
+		</city>
+	</country>
+	<country name="Kenya">
+		<city lat="-1.2667" long="36.8">
+			Nairobi
+		</city>
+	</country>
+	<country name="Turkey">
+		<city lat="36.9833" long="35.3">
+			Adana
+		</city>
+		<city lat="39.95" long="32.8833">
+			Ankara
+		</city>
+		<city lat="40.9667" long="28.8333">
+			Istanbul
+		</city>
+		<city lat="38.4333" long="27.1667">
+			Izmir
+		</city>
+	</country>
+	<country name="Afghanistan">
+		<city lat="34.5833" long="69.2">
+			Kabul
+		</city>
+	</country>
+	<country name="Bangladesh">
+		<city lat="22.35" long="91.8333">
+			Chittagong
+		</city>
+	</country>
+	<country name="Hungary">
+		<city lat="47.5167" long="19.0333">
+			Budapest
+		</city>
+	</country>
+	<country name="France">
+		<city lat="45.7" long="4.7833">
+			Lyon
+		</city>
+		<city lat="43.3" long="5.3833">
+			Marseilles
+		</city>
+		<city lat="47.25" long="-1.5667">
+			Nantes
+		</city>
+		<city lat="43.7" long="7.2667">
+			Nice
+		</city>
+		<city lat="48.8167" long="2.4833">
+			Paris
+		</city>
+		<city lat="48.5833" long="7.7667">
+			Strasbourg
+		</city>
+	</country>
+	<country name="Bermuda">
+		<city lat="33.3667" long="-64.6833">
+			Kindley AFB
+		</city>
+	</country>
+	<country name="Somalia">
+		<city lat="2.0333" long="49.3167">
+			Mogadiscio
+		</city>
+	</country>
+	<country name="Peru">
+		<city lat="-12.0833" long="-77.05">
+			Lima
+		</city>
+	</country>
+	<country name="Norway">
+		<city lat="60.4" long="5.3167">
+			Bergen
+		</city>
+		<city lat="59.9333" long="10.7333">
+			Oslo
+		</city>
+	</country>
+	<country name="Korea">
+		<city lat="39.0333" long="125.6833">
+			Pyongyang
+		</city>
+		<city lat="37.5667" long="126.9667">
+			Seoul
+		</city>
+	</country>
+	<country name="Cuba">
+		<city lat="19.9" long="-75.15">
+			Guantanamo Bay
+		</city>
+		<city lat="23.1333" long="-82.35">
+			Havana
+		</city>
+	</country>
+	<country name="China">
+		<city lat="29.55" long="106.55">
+			Chongquing
+		</city>
+		<city lat="31.2" long="121.4333">
+			Shanghai
+		</city>
+	</country>
+	<country name="Dominican Republic">
+		<city lat="18.4833" long="-69.9">
+			Santo Domingo
+		</city>
+	</country>
+	<country name="Finland">
+		<city lat="60.1667" long="24.95">
+			Helsinki
+		</city>
+	</country>
+	<country name="Libya">
+		<city lat="32.1" long="20.0667">
+			Benghazi
+		</city>
+	</country>
+	<country name="Indonesia">
+		<city lat="-6.1833" long="106.8333">
+			Djakarta
+		</city>
+		<city lat="-10.1667" long="123.5667">
+			Kupang
+		</city>
+		<city lat="-5.1333" long="119.4667">
+			Makassar
+		</city>
+		<city lat="3.5833" long="98.6833">
+			Medan
+		</city>
+		<city lat="-3.0" long="104.7667">
+			Palembang
+		</city>
+		<city lat="-7.2167" long="112.7167">
+			Surabaya
+		</city>
+	</country>
+	<country name="Sweden">
+		<city lat="59.35" long="18.0667">
+			Stockholm
+		</city>
+	</country>
+	<country name="Vietnam">
+		<city lat="16.0667" long="108.2167">
+			Da Nang
+		</city>
+		<city lat="21.0333" long="105.8667">
+			Hanoi
+		</city>
+		<city lat="10.7833" long="106.7">
+			Ho Chi Minh City (Saigon)
+		</city>
+	</country>
+	<country name="Russia">
+		<city lat="43.2333" long="76.8833">
+			Alma Ata
+		</city>
+		<city lat="64.55" long="40.5333">
+			Archangel
+		</city>
+		<city lat="54.7167" long="20.5">
+			Kaliningrad
+		</city>
+		<city lat="56.0167" long="92.95">
+			Krasnoyarsk
+		</city>
+		<city lat="50.45" long="30.5">
+			Kiev
+		</city>
+		<city lat="50.0" long="36.2333">
+			Kharkov
+		</city>
+		<city lat="53.1833" long="50.1">
+			Kuibyshev
+		</city>
+		<city lat="59.9333" long="30.2667">
+			Leningrad
+		</city>
+		<city lat="53.9" long="27.55">
+			Minsk
+		</city>
+		<city lat="55.7667" long="37.6667">
+			Moscow
+		</city>
+		<city lat="46.4833" long="30.7333">
+			Odessa
+		</city>
+		<city lat="52.8833" long="158.7">
+			Petropavlovsk
+		</city>
+		<city lat="47.2167" long="39.7167">
+			Rostov on Don
+		</city>
+		<city lat="56.8167" long="60.6333">
+			Sverdlovsk
+		</city>
+		<city lat="41.3333" long="69.3">
+			Tashkent
+		</city>
+		<city lat="41.7167" long="44.8">
+			Tbilisi
+		</city>
+		<city lat="43.1167" long="131.9167">
+			Vladivostok
+		</city>
+		<city lat="48.7" long="44.5167">
+			Volgograd
+		</city>
+	</country>
+	<country name="Bulgaria">
+		<city lat="42.7" long="23.3333">
+			Sofia
+		</city>
+	</country>
+	<country name="Portugal">
+		<city lat="38.7167" long="-9.1333">
+			Lisbon
+		</city>
+	</country>
+	<country name="South Africa">
+		<city lat="-33.9333" long="18.4833">
+			Cape Town
+		</city>
+		<city lat="-26.1833" long="28.05">
+			Johannesburg
+		</city>
+		<city lat="-25.75" long="28.2333">
+			Pretoria
+		</city>
+	</country>
+	<country name="Equador">
+		<city lat="-2.0" long="-79.8833">
+			Guayaquil
+		</city>
+		<city lat="-0.2167" long="-78.5333">
+			Quito
+		</city>
+	</country>
+	<country name="Malaysia">
+		<city lat="3.1167" long="101.7">
+			Kuala Lumpur
+		</city>
+		<city lat="5.4167" long="100.3167">
+			Penang
+		</city>
+	</country>
+	<country name="Senegal">
+		<city lat="14.7" long="-17.4833">
+			Dakar
+		</city>
+	</country>
+	<country name="Japan">
+		<city lat="33.5833" long="130.45">
+			Fukuoka
+		</city>
+		<city lat="43.0667" long="141.35">
+			Sapporo
+		</city>
+		<city lat="35.6833" long="139.7667">
+			Tokyo
+		</city>
+	</country>
+	<country name="Brazil">
+		<city lat="-1.45" long="-48.4833">
+			Belem
+		</city>
+		<city lat="-19.9333" long="-43.95">
+			Belo Horizonte
+		</city>
+		<city lat="-15.8667" long="-47.9167">
+			Brasilia
+		</city>
+		<city lat="-25.4167" long="-49.2833">
+			Curitiba
+		</city>
+		<city lat="-3.7667" long="-38.55">
+			Fortaleza
+		</city>
+		<city lat="-30.0333" long="-51.2167">
+			Porto Alegre
+		</city>
+		<city lat="-8.0667" long="-34.8833">
+			Recife
+		</city>
+		<city lat="-22.9167" long="-43.2">
+			Rio De Janeiro
+		</city>
+		<city lat="-13.0" long="-38.5">
+			Salvador
+		</city>
+		<city lat="-23.55" long="-46.6333">
+			Sao Paulo
+		</city>
+	</country>
+	<country name="Panama">
+		<city lat="8.9667" long="-79.55">
+			Panama City
+		</city>
+	</country>
+	<country name="Bahamas">
+		<city lat="25.0833" long="-77.35">
+			Nassau
+		</city>
+	</country>
+	<country name="Gibraltar">
+		<city lat="36.15" long="-5.3667">
+			Gibraltar
+		</city>
+	</country>
+	<country name="Ireland">
+		<city lat="53.3667" long="-6.35">
+			Dublin
+		</city>
+		<city lat="52.6833" long="-8.9167">
+			Shannon
+		</city>
+	</country>
+	<country name="Nigeria">
+		<city lat="6.45" long="3.4">
+			Lagos
+		</city>
+	</country>
+	<country name="Australia">
+		<city lat="-34.9333" long="138.5833">
+			Adelaide
+		</city>
+		<city lat="-23.8" long="133.8833">
+			Alice Springs
+		</city>
+		<city lat="-27.4667" long="153.0333">
+			Brisbane
+		</city>
+		<city lat="-12.4667" long="130.85">
+			Darwin
+		</city>
+		<city lat="-37.8167" long="144.9667">
+			Melbourne
+		</city>
+		<city lat="-31.95" long="115.85">
+			Perth
+		</city>
+		<city lat="-33.8667" long="151.2">
+			Sydney
+		</city>
+	</country>
+	<country name="Iran">
+		<city lat="30.35" long="48.2667">
+			Abadan
+		</city>
+		<city lat="36.2833" long="59.6">
+			Meshed
+		</city>
+		<city lat="35.6833" long="51.4167">
+			Tehran
+		</city>
+	</country>
+	<country name="Algeria">
+		<city lat="36.7667" long="30.05">
+			Algiers
+		</city>
+	</country>
+	<country name="El Salvador">
+		<city lat="13.7" long="-89.2167">
+			San Salvador
+		</city>
+	</country>
+	<country name="Zaire">
+		<city lat="-4.3333" long="15.3">
+			Kinshasa (Leopoldville)
+		</city>
+		<city lat="-0.4333" long="15.2333">
+			Kisangani (Stanleyville)
+		</city>
+	</country>
+	<country name="Chile">
+		<city lat="-53.1667" long="-70.9">
+			Punta Arenas
+		</city>
+		<city lat="-33.45" long="-70.7">
+			Santiago
+		</city>
+		<city lat="-33.0167" long="-71.6333">
+			Valparaiso
+		</city>
+	</country>
+	<country name="Puerto Rico">
+		<city lat="18.4833" long="-66.1167">
+			San Juan
+		</city>
+	</country>
+	<country name="Belgium">
+		<city lat="50.8" long="4.35">
+			Brussels
+		</city>
+	</country>
+	<country name="Thailand">
+		<city lat="13.7333" long="100.5">
+			Bangkok
+		</city>
+	</country>
+	<country name="Haiti">
+		<city lat="18.55" long="-72.3333">
+			Port Au Prince
+		</city>
+	</country>
+	<country name="Belize">
+		<city lat="17.5167" long="-88.1833">
+			Belize
+		</city>
+	</country>
+	<country name="Hong Kong">
+		<city lat="22.3" long="114.1667">
+			Hong Kong
+		</city>
+	</country>
+	<country name="South Yemen">
+		<city lat="12.8333" long="45.0333">
+			Aden
+		</city>
+	</country>
+	<country name="Irian Barat">
+		<city lat="-0.8667" long="134.0833">
+			Manokwari
+		</city>
+	</country>
+	<country name="Denmark">
+		<city lat="55.6833" long="12.55">
+			Copenhagen
+		</city>
+	</country>
+	<country name="Poland">
+		<city lat="50.0667" long="19.95">
+			Krakow
+		</city>
+		<city lat="52.2167" long="21.0333">
+			Warsaw
+		</city>
+	</country>
+	<country name="Morocco">
+		<city lat="33.5833" long="-7.65">
+			Casablanca
+		</city>
+	</country>
+	<country name="Switzerland">
+		<city lat="47.3833" long="8.55">
+			Zurich
+		</city>
+	</country>
+	<country name="Iraq">
+		<city lat="33.3333" long="44.4">
+			Baghdad
+		</city>
+		<city lat="36.3167" long="43.15">
+			Mosul
+		</city>
+	</country>
+	<country name="Uruguay">
+		<city lat="-34.85" long="-56.2167">
+			Montevideo
+		</city>
+	</country>
+	<country name="Lebanon">
+		<city lat="33.9" long="35.4667">
+			Beirut
+		</city>
+	</country>
+	<country name="Tunisia">
+		<city lat="36.7833" long="10.2">
+			Tunis
+		</city>
+	</country>
+	<country name="Colombia">
+		<city lat="10.9833" long="-74.8">
+			Baranquilla
+		</city>
+		<city lat="4.6" long="-74.0833">
+			Bogota
+		</city>
+		<city lat="3.4167" long="-76.5">
+			Cali
+		</city>
+		<city lat="6.2167" long="-75.6">
+			Medellin
+		</city>
+	</country>
+	<country name="Taiwan">
+		<city lat="22.95" long="120.2">
+			Tainan
+		</city>
+		<city lat="25.0333" long="121.5167">
+			Taipei
+		</city>
+	</country>
+	<country name="Nicaragua">
+		<city lat="12.1667" long="-86.25">
+			Managua
+		</city>
+	</country>
+	<country name="Trinidad">
+		<city lat="10.6667" long="-61.5167">
+			Port of Spain
+		</city>
+	</country>
+	<country name="Madagascar">
+		<city lat="-18.9167" long="47.55">
+			Tananarive
+		</city>
+	</country>
+	<country name="Italy">
+		<city lat="45.45" long="9.2833">
+			Milan
+		</city>
+		<city lat="40.8833" long="14.3">
+			Naples
+		</city>
+		<city lat="41.8" long="12.6">
+			Rome
+		</city>
+	</country>
+	<country name="Sudan">
+		<city lat="15.6167" long="32.55">
+			Khartoum
+		</city>
+	</country>
+	<country name="Nepal">
+		<city lat="27.7" long="85.2">
+			Katmandu
+		</city>
+	</country>
+	<country name="Venezuela">
+		<city lat="10.5" long="-66.9333">
+			Caracas
+		</city>
+		<city lat="10.65" long="-71.6">
+			Maracaibo
+		</city>
+	</country>
+	<country name="United Kingdom">
+		<city lat="54.6" long="-5.9167">
+			Belfast
+		</city>
+		<city lat="52.4833" long="-1.9333">
+			Birmingham
+		</city>
+		<city lat="51.4667" long="-3.1667">
+			Cardiff
+		</city>
+		<city lat="55.9167" long="-3.1833">
+			Edinburgh
+		</city>
+		<city lat="55.8667" long="-4.2833">
+			Glasgow
+		</city>
+		<city lat="51.4833" long="-0.0">
+			London
+		</city>
+	</country>
+	<country name="Israel">
+		<city lat="31.7833" long="35.2167">
+			Jerusalem
+		</city>
+		<city lat="32.1" long="34.7833">
+			Tel Aviv
+		</city>
+	</country>
+	<country name="Iceland">
+		<city lat="64.1333" long="21.9333">
+			Reykjavik
+		</city>
+	</country>
+	<country name="Czechoslovakia">
+		<city lat="50.0833" long="14.4167">
+			Prague
+		</city>
+	</country>
+	<country name="Austria">
+		<city lat="48.25" long="16.3667">
+			Vienna
+		</city>
+	</country>
+	<country name="Papua New Guinea">
+		<city lat="-9.4833" long="147.15">
+			Port Moresby
+		</city>
+	</country>
+	<country name="Jordan">
+		<city lat="31.95" long="35.95">
+			Amman
+		</city>
+	</country>
+	<country name="Martinique">
+		<city lat="14.6167" long="-61.0833">
+			Fort De France
+		</city>
+	</country>
+	<country name="Philippines">
+		<city lat="14.5833" long="120.9833">
+			Manila
+		</city>
+	</country>
+	<country name="Sri Lanka">
+		<city lat="6.9" long="79.8667">
+			Colombo
+		</city>
+	</country>
+	<country name="Guyana">
+		<city lat="6.8333" long="-58.2">
+			Georgetown
+		</city>
+	</country>
+	<country name="Syria">
+		<city lat="33.5" long="36.3333">
+			Damascus
+		</city>
+	</country>
+	<country name="Burma">
+		<city lat="21.9833" long="96.1">
+			Mandalay
+		</city>
+		<city lat="16.7833" long="96.15">
+			Rangoon
+		</city>
+	</country>
+	<country name="Honduras">
+		<city lat="14.1" long="-87.2167">
+			Tegucigalpa
+		</city>
+	</country>
+	<country name="Mexico">
+		<city lat="20.6833" long="-103.3333">
+			Guadalajara
+		</city>
+		<city lat="20.9667" long="-89.6333">
+			Merida
+		</city>
+		<city lat="19.4" long="-99.2">
+			Mexico City
+		</city>
+		<city lat="25.6667" long="-100.3">
+			Monterrey
+		</city>
+		<city lat="19.2" long="-96.1333">
+			Vera Cruz
+		</city>
+	</country>
+	<country name="Egypt">
+		<city lat="29.8667" long="31.3333">
+			Cairo
+		</city>
+	</country>
+	<country name="Singapore">
+		<city lat="1.3" long="103.8333">
+			Singapore
+		</city>
+	</country>
+	<country name="Surinam">
+		<city lat="5.8167" long="-55.15">
+			Paramaribo
+		</city>
+	</country>
+	<country name="Rumania">
+		<city lat="44.4167" long="26.1">
+			Bucharest
+		</city>
+	</country>
+	<country name="Congo">
+		<city lat="-4.25" long="15.25">
+			Brazzaville
+		</city>
+	</country>
+	<country name="Yugoslavia">
+		<city lat="44.8" long="20.4667">
+			Belgrade
+		</city>
+	</country>
+	<country name="Greece">
+		<city lat="37.9667" long="23.7167">
+			Athens
+		</city>
+		<city lat="40.6167" long="22.95">
+			Thessaloniki
+		</city>
+	</country>
+	<country name="Paraguay">
+		<city lat="-25.2833" long="-57.5">
+			Ascuncion
+		</city>
+	</country>
+</countries>
+

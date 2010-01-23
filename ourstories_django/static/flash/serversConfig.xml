@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<serversConfig>
+	<imagesUploadScript>/add/upload/image/</imagesUploadScript><!--To upload images-->
+	<snapShotUploadScript>upload/snapshot/</snapShotUploadScript><!--To upload images-->
+	<imagesUploadDirectory>/add/image/</imagesUploadDirectory><!--  For retrieving uploaded images -->
+	<streamingServer>rtmp://192.168.0.16:1935/LiveStreams/MPlayer-1.0rc2/</streamingServer><!--To stream audio to "Flash Media Server"-->
+	<storyUploadPath>upload/story/</storyUploadPath><!--To send the xml file-->
+	<langRequestScript>config/languages/</langRequestScript><!-- To Request the selected Lang from the server -->
+</serversConfig>

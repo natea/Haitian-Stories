@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load comments %}
+
+{% block page_title %}OurStories - Confirm Flagging{% endblock %}
+
+
+{% block content %}
+<h1>Really flag the story &ldquo;{{story}}&rdquo; for review?</h1>
+
+<form action="" method="post">
+
+  <p>This will mark the story as requiring review by an OurStories moderator.</p>
+
+  <p><input type="submit" value="Yes, flag the story"/></p>
+
+  <p>or <a href="javascript:history.go(-1)">Cancel and go back</a></p>
+
+</form>
+  
+
+{% endblock %}
+
+
+{% block sidebar2 %}{% endblock %}
+{% block sidebar1 %}{% endblock %}

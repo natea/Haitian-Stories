@@ -1,0 +1,22 @@
+- model: storyfeed.Feed
+  pk: 1
+  fields:
+    feed_url: "file:///home/shimon/dev/ourstories/trunk/ourstories_django/storyfeed/example_feeds/ivr_unicef.praekelt.com_ivr.asp.xml"
+    feed_format: pk_ivr
+    is_active: True
+
+- model: storyfeed.Feed
+  pk: 2
+  fields:
+    feed_url: "file:///home/shimon/dev/ourstories/trunk/ourstories_django/storyfeed/example_feeds/sms_unicef.praekelt.com_speakAfrica.asp.xml"
+    feed_format: pk_sms
+    is_active: True
+
+# drop.io test feed
+# see http://drop.io/eyg9lp7
+- model: storyfeed.Feed
+  pk: 3
+  fields:
+    feed_url: "http://drop.io/c0nlrkyjixvhlzptju3v/4ca0221d072daa90679ca1f5b4db17698a805ec9/eyg9lp7.rss"
+    feed_format: dr_rss
+    is_active: True

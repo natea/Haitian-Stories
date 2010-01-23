@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block page_title %}OurStories - Search{% if performedSearch %} results{% if query %} for "{{ query }}"{% endif %}{% endif %}{% endblock %}
+
+{% block topleft_col %}
+<div class="post">
+    <h1 class="title">Story Search</h1>
+    <div class="entry">
+        <p>Select criteria to search for, and click on "search" to continue.</p>
+        <form action="/search/" method="get">
+            <table id="searchFormTable">
+            {{ form.as_table }}
+            <tr><td></td>
+            <td style="text-align: right" >
+            <br/>
+            <input type="submit" value="Search" style="width: auto;" />
+            </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</div>
+{% if performedSearch %}
+<div class="post">
+    <div class="entry">
+        <h2>Results{% if query %} for "{{ query|escape }}"{% endif %}:</h2>
+        {% if results.object_list %}
+        <ul>
+            {% for story in results.object_list %}
+            <li><a href="/story/{{ story.id }}">{{ story.make_title }}</a>, contributed by {{ story.contributor.name }} on {{ story.created }}</li>
+            {% endfor %}
+        </ul>
+        <div class="pagination">
+            <span class="step-links">
+                {% if results.has_previous %}
+                <a href="?{{ paginatorQueryBase }}&page={{ results.previous_page_number }}">previous</a>
+                {% endif %}
+                <span class="current">Page {{ results.number }} of {{ results.paginator.num_pages }}.</span>
+                {% if results.has_next %}
+                <a href="?{{ paginatorQueryBase }}&page={{ results.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+        {% else %}
+        <p>No matching stories found.</p>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+{% endblock topleft_col %}
+
+{% block content %}
+{% endblock content %}
+
+{% block sidebar1 %}
+{% endblock sidebar1 %}
+
+{% block sidebar2 %}
+{% endblock sidebar2 %}

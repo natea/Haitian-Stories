@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block page_title %}OurStories - Add Your Story{% endblock %}
+
+{% block topleft_col %}
+<div class="post">
+    <h1 class="title">Add Your Story</h1>
+    <div class="entry">
+
+      How would you like to record your story?  
+      
+      <ul>
+        <li><a href="{% url story-add-form postingtype="text" %}">Write a Text-based Story</a></li>
+        <li><a href="{% url story-upload %}">Upload an Existing Audio or Video recording</a></li>
+        <li><a href="{% url story-record %}">Record Video or Audio</a></li>
+      </ul>
+
+    </div>
+</div>
+{% endblock topleft_col %}
+
+{% block content %}
+{% endblock content %}
+
+{% block sidebar1 %}
+{% endblock sidebar1 %}
+
+{% block sidebar2 %}
+{% endblock sidebar2 %}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ourstories_config>
+
+    <red5_nc_url>rtmp:/oflaDemo</red5_nc_url>
+    <amf_nc_url>http://ourstories-staging.jazkarta.com/gateway/</amf_nc_url>
+    <flv_url>http://ourstories-staging.jazkarta.com/static/flv/</flv_url>
+    <story_url>http://ourstories-staging.jazkarta.com/story/</story_url>
+    <story_record_url>http://ourstories-staging.jazkarta.com/story/record/</story_record_url>
+    <max_record_sec>180</max_record_sec>
+    <debug>0</debug>
+    
+    
+<!--
+
+use these for ourstories-staging.jazkarta.com
+    <red5_nc_url>rtmp:/oflaDemo</red5_nc_url>
+    <amf_nc_url>http://ourstories-staging.jazkarta.com/gateway/</amf_nc_url>
+    <flv_url>http://ourstories-staging.jazkarta.com/static/flv/</flv_url>
+    <story_url>http://ourstories-staging.jazkarta.com/story/</story_url>
+    <story_record_url>http://ourstories-staging.jazkarta.com/story/record/</story_record_url>
+    <max_record_sec>180</max_record_sec>
+    <debug>0</debug>
+
+use these for localhost dev
+    <red5_nc_url>rtmp:/oflaDemo</red5_nc_url>
+    <amf_nc_url>http://localhost:8000/gateway/</amf_nc_url>
+    <flv_url>http://localhost:8000/static/flv/</flv_url>
+    <story_url>http://localhost:8000/story/</story_url>
+    <story_record_url>http://localhost:8000/story/record/</story_record_url>
+    <max_record_sec>180</max_record_sec>
+    <debug>1</debug>
+
+use these for lan dev
+    <red5_nc_url>rtmp:/oflaDemo</red5_nc_url>
+    <amf_nc_url>http://192.168.0.102:8888/gateway/</amf_nc_url>
+    <flv_url>http://192.168.0.102:8888/static/flv/</flv_url>
+    <story_url>http://192.168.0.102:8888/story/</story_url>
+    <story_record_url>http://192.168.0.102:8888/story/record/</story_record_url>
+    <max_record_sec>180</max_record_sec>
+    <debug>1</debug>
+
+-->
+
+</ourstories_config>

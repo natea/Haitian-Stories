@@ -1,0 +1,230 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.jplayer.js"></script>
+<script>
+
+$(document).ready(function(){
+
+	$("#jquery_jplayer").jPlayer({
+        swfPath: "/static/js",
+		ready: function () {
+			$("#jquery_jplayer").changeAndPlay('{{track_url|safe}}');
+		},
+		cssPrefix: "different_prefix_example"
+	});
+
+	$("#jquery_jplayer").jPlayerId("play", "player_play");
+	$("#jquery_jplayer").jPlayerId("pause", "player_pause");
+	$("#jquery_jplayer").jPlayerId("stop", "player_stop");
+	$("#jquery_jplayer").jPlayerId("loadBar", "player_progress_load_bar");
+	$("#jquery_jplayer").jPlayerId("playBar", "player_progress_play_bar");
+	$("#jquery_jplayer").jPlayerId("volumeMin", "player_volume_min");
+	$("#jquery_jplayer").jPlayerId("volumeMax", "player_volume_max");
+	$("#jquery_jplayer").jPlayerId("volumeBar", "player_volume_bar");
+	$("#jquery_jplayer").jPlayerId("volumeBarValue", "player_volume_bar_value");
+
+	$("#jquery_jplayer").onProgressChange( function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
+		var myPlayedTime = new Date(playedTime);
+		var ptMin = (myPlayedTime.getMinutes() < 10) ? "0" + myPlayedTime.getMinutes() : myPlayedTime.getMinutes();
+		var ptSec = (myPlayedTime.getSeconds() < 10) ? "0" + myPlayedTime.getSeconds() : myPlayedTime.getSeconds();
+		$("#play_time").text(ptMin+":"+ptSec);
+
+		var myTotalTime = new Date(totalTime);
+		var ttMin = (myTotalTime.getMinutes() < 10) ? "0" + myTotalTime.getMinutes() : myTotalTime.getMinutes();
+		var ttSec = (myTotalTime.getSeconds() < 10) ? "0" + myTotalTime.getSeconds() : myTotalTime.getSeconds();
+		$("#total_time").text(ttMin+":"+ttSec);
+	});
+
+	$("#jquery_jplayer").onSoundComplete( function() {
+		//no repeat//$("#jquery_jplayer").play();
+	});
+});
+
+</script>
+<style type="text/css" media="screen">
+<!--
+#player_container {
+	position: relative;
+	background-color:#eee;
+	width:418px;
+	height:100px;
+	border:1px solid #ace;
+}
+#player_container  ul#player_controls {
+	list-style-type:none;
+	padding:0;
+	margin: 0;
+}
+#player_container  ul#player_controls li {
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#player_play,
+#player_pause {
+	display: block;
+	position: absolute;
+	left:40px;
+	top:20px;
+	width:40px;
+	height:40px;
+	cursor: pointer;
+}
+#player_play {
+	background: url("/static/images/jplayer/spirites.jpg") 0 0 no-repeat;
+}
+#player_play.different_prefix_example_hover {
+	background: url("/static/images/jplayer/spirites.jpg") -41px 0 no-repeat;
+}
+#player_pause {
+	background: url("/static/images/jplayer/spirites.jpg") 0 -42px no-repeat;
+}
+#player_pause.different_prefix_example_hover {
+	background: url("/static/images/jplayer/spirites.jpg") -41px -42px no-repeat;
+}
+#player_stop {
+	position: absolute;
+	left:90px;
+	top:26px;
+	background: url("/static/images/jplayer/spirites.jpg") 0 -83px no-repeat;
+	width:28px;
+	height:28px;
+	cursor: pointer;
+}
+#player_stop.different_prefix_example_hover {
+	background: url("/static/images/jplayer/spirites.jpg") -29px -83px no-repeat;
+}
+#player_progress {
+	position: absolute;
+	left:130px;
+	top:32px;
+	background-color: #eee;
+	width:122px;
+	height:15px;
+}
+#player_progress_load_bar {
+	background: url("/static/images/jplayer/bar_load.gif")  top left repeat-x;
+	width:0px;
+	height:15px;
+	cursor: pointer;
+}
+#player_progress_load_bar.different_prefix_example_buffer {
+	background: url("/static/images/jplayer/bar_buffer.gif")  top left repeat-x;
+}
+#player_progress_play_bar {
+	background: url("/static/images/jplayer/bar_play.gif") top left repeat-x ;
+	width:0px;
+	height:15px;
+}
+#player_volume_min {
+	position: absolute;
+	left:274px;
+	top:32px;
+	background: url("/static/images/jplayer/spirites.jpg") 0 -170px no-repeat;
+	width:18px;
+	height:15px;
+	cursor: pointer;
+}
+
+#player_volume_max {
+	position: absolute;
+	left:346px;
+	top:32px;
+	background: url("/static/images/jplayer/spirites.jpg") 0 -186px no-repeat;
+	width:18px;
+	height:15px;
+	cursor: pointer;
+}
+
+#player_volume_min.different_prefix_example_hover {
+	background: url("/static/images/jplayer/spirites.jpg") -19px -170px no-repeat;
+}
+
+#player_volume_max.different_prefix_example_hover {
+	background: url("/static/images/jplayer/spirites.jpg") -19px -186px no-repeat;
+}
+
+#player_volume_bar {
+	position: absolute;
+	left:292px;
+	top:37px;
+	background: url("/static/images/jplayer/volume_bar.gif") repeat-x top left;
+	width:46px;
+	height:5px;
+	cursor: pointer;
+}
+#player_volume_bar_value {
+	background: url("/static/images/jplayer/volume_bar_value.gif") repeat-x top left;
+	width:0px;
+	height:5px;
+}
+
+#player_playlist_message {
+	position: absolute;
+	left:0;
+	bottom:0;
+	width:338px;
+	padding:5px 40px 10px 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:1.4em;
+	height:1em;
+	background-color:#ccc;
+}
+
+#song_title {
+	float:left;
+	margin:0 5px 0 0;
+	padding:0;
+	font-weight:bold;
+    width: 20em;
+    overflow: hidden;
+    height: 12pt;
+}
+
+#play_time,
+#total_time {
+	padding-top:.3em;
+	font-weight:normal;
+	font-style:oblique;
+	font-size:.7em;
+}
+
+#play_time {
+	float:left;
+}
+
+#total_time {
+	float:right;
+	text-align: right;
+}
+
+-->
+</style>
+
+
+<div id="jquery_jplayer"></div>
+<div id="player_container">
+	<ul id="player_controls">
+		<li id="player_play"><a href="#" onClick="$('#jquery_jplayer').play(); return false;" title="play"><span>play</span></a></li>
+		<li id="player_pause"><a href="#" onClick="$('#jquery_jplayer').pause(); return false;" title="pause"><span>pause</span></a></li>
+		<li id="player_stop"><a href="#" onClick="$('#jquery_jplayer').stop(); return false;" title="stop"><span>stop</span></a></li>
+
+		<li id="player_volume_min"><a href="#" onClick="$('#jquery_jplayer').volume(0); return false;" title="min volume"><span>min volume</span></a></li>
+		<li id="player_volume_max"><a href="#" onClick="$('#jquery_jplayer').volume(100); return false;" title="max volume"><span>max volume</span></a></li>
+	</ul>
+
+
+	<div id="player_progress">
+		<div id="player_progress_load_bar">
+			<div id="player_progress_play_bar"></div>
+		</div>
+
+	</div>
+	<div id="player_volume_bar">
+		<div id="player_volume_bar_value"></div>
+	</div>
+	<div id="player_playlist_message">
+		<div id="song_title">{{track_title|default:"Story"}}</div>
+		<div id="play_time"></div>
+		<div id="total_time"></div>
+
+	</div>
+</div>

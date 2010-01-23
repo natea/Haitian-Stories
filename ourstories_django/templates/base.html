@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="/static/css/glazed.css" media="screen" />
+    <script src="/static/flowplayer/flowplayer-3.1.0.min.js"></script>
+
+    <meta name="keywords" content="{% block meta_keywords %}ourstories stories unicef mizizi{% endblock %}" />
+    <meta name="description" content="{% block meta_description %}{% endblock %}" />
+    <title>{% block page_title %}OurStories{% endblock %}</title>
+    {% block custom_head_contents %}{% endblock %}
+</head>
+<body {% block body_attrs %}{% endblock %}>
+<!-- start wrapper -->
+<div id="wrapper">
+    <!-- start menu -->
+      {% if user.is_staff %}
+      <div class="staff_controls">
+        Welcome, {{user}}! &nbsp;
+        <a href="/admin/">admin</a> &middot;
+        <a href="{% url flag-dashboard %}">review flags</a> &middot;
+        <a href="/admin/logout/">logout</a>
+      </div>
+      {% endif %}
+
+    <div id="menu">
+      
+
+        <ul>
+            <li{% if menuHomeActive %} class="current_page_item"{% endif %}><a href="/">Home</a></li>
+
+            <li{% if menuAdd2Active %} class="current_page_item"{% endif %}><a href="{% url story-add %}">Add Your Story</a></li>
+            <li{% if menuSearchActive %} class="current_page_item"{% endif %}><a href="/search/">Search</a></li>
+            <li{% if menuAboutActive %} class="current_page_item"{% endif %}><a href="/about/">About</a></li>
+        </ul>
+    </div>
+    <!-- end menu -->
+    <!-- start header -->
+    <div id="header">
+        <div id="logo">
+            <h1>{% block header_title %}<a style="color: #e43c15" href="/">OurStories</a>{% endblock %}</h1>
+            <p>{% block header_slogan %}Tell the world your story{% endblock %}</p>
+        </div>
+        <div id="search">
+            <form method="get" action="/search">
+                <fieldset>
+                <legend>Quick Search</legend>
+                <input id="q" type="text" name="q" value="" />
+                <input id="x" type="submit" value="Search" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start page -->
+    <div id="page">
+        <div id="bgtop"></div>
+        <div id="bgbottom">
+            <div id="topleft_col">
+                {% block topleft_col %}
+                {% endblock topleft_col %}
+            </div>
+            
+            <!-- start sidebar two -->
+            <div id="sidebar2" class="sidebar">
+                {% block sidebar2 %}
+                <ul>
+                    <li>
+                        <h2>Current stats</h2>
+                        <ul>
+                            {% block statistics %}
+                            Not yet available
+                            {% endblock statistics %}
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Languages</h2>
+                        <ul>
+                            {% block languages %}
+                            None
+                            {% endblock languages %}
+                        </ul>
+                    </li>
+                </ul>
+                {% endblock sidebar2 %}
+            </div>
+            <!-- end sidebar two -->
+            
+            <div id="content">
+                {% block content %}
+                {% endblock content %}
+            </div>
+            <!-- end content -->
+            <!-- start sidebar one -->
+            <div id="sidebar1" class="sidebar">
+                {% block sidebar1 %}
+                <ul>
+                    <li>
+                        <h2>Recent Stories</h2>
+                        <ul>
+                            {% block recent_stories %}
+                            None
+                            {% endblock recent_stories %}
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Recent Comments</h2>
+                        <ul>
+                            {% block recent_comments %}
+                            None
+                            {% endblock recent_comments %}
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Categories</h2>
+                        <ul>
+                            {% block categories %}
+                            None
+                            {% endblock categories %}
+                        </ul>
+                    </li>
+                </ul>
+                {% endblock sidebar1 %}
+            </div>
+            <!-- end sidebar one -->
+            
+            <div style="clear: both;">&nbsp;</div>
+        </div>
+    </div>
+    <!-- end page -->
+    <hr />
+    <!-- start footer -->
+    <div id="footer">
+        <p>
+          <a href="http://www.youtube.com/"><img align="right" style="border:none; margin: -12px 9px 0 0;" src="/static/images/youtube-badge2.gif" alt="Powered by YouTube"/></a>
+
+          &copy;2009 UNICEF &nbsp;&middot;&nbsp; CSS adapted from original design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+    </div>
+    <!-- end footer -->
+</div>
+<!-- end wrapper -->
+    {% block custom_scripts %}{% endblock %}
+</body>
+</html>

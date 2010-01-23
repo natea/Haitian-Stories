@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+    xmlns:mx="http://www.adobe.com/2006/mxml"
+    xmlns:ourstories="org.ourstories.components.*"
+    layout="absolute"
+    applicationComplete="onApplicationComplete(event)"
+    backgroundColor="#ffffff"
+    >
+<mx:Script>
+<![CDATA[
+    import mx.controls.Alert;
+    import mx.rpc.events.FaultEvent;
+    import mx.rpc.events.ResultEvent;
+    import mx.binding.utils.BindingUtils;
+    import org.ourstories.services.IFlvService;
+    import org.ourstories.controllers.Controller;
+    import org.ourstories.controllers.IController;
+    import org.ourstories.services.FlvService;
+    import org.ourstories.models.FlvModel;
+    import org.ourstories.net.NetConnectionManager;
+    import mx.events.FlexEvent;
+
+    [Bindable]
+    public var nc:NetConnection;
+    
+    public var flvService:IFlvService;
+    public var controller:IController;
+    public var netConnectionManager:NetConnectionManager;
+    
+    [Bindable]
+    public var flvModel:FlvModel;
+    
+    private function onApplicationComplete(event:FlexEvent):void
+    {
+        trace("onApplicationComplete");
+        
+        configXml.url = "ourstories_config.xml";
+        configXml.send()
+    }
+    
+    private function onXmlResult(event:ResultEvent):void
+    {
+        trace("loaded ourstories_config.xml");
+        var xml:XML = XML(event.result);
+
+        // now process ourstories_config.xml and set OurStoriesConfig static
+        OurStoriesConfig.AMF_NC_URL = xml.amf_nc_url;
+        OurStoriesConfig.FLV_URL = xml.flv_url;
+        OurStoriesConfig.RED5_NC_URL = xml.red5_nc_url;
+        OurStoriesConfig.STORY_URL = xml.story_url;
+        OurStoriesConfig.STORY_RECORD_URL = xml.story_record_url;
+        
+        var debug:Boolean = (int(xml.debug) == 1);
+        // also handle true TRUE True etc
+        if (String(xml.debug).toUpperCase() == "TRUE")
+            debug = true;
+        OurStoriesConfig.DEBUG = debug;
+        
+        var max:int = int(xml.max_record_sec);
+        if (max > 0)
+            OurStoriesConfig.MAX_RECORD_SEC = max;
+            
+        completeApplication();        
+    }
+    private function onXmlFault(event:FaultEvent):void
+    {
+        trace("unable to load ourstories_config.xml, using default urls");
+        // failed to load xml, use defaults in OurStoriesConfig.as
+        
+        completeApplication();
+    }
+
+    private function completeApplication():void
+    {
+        // setup service and controller
+        flvService = new FlvService();
+        controller = new Controller();
+        controller.flvService = flvService;
+        
+        // get model with bindable id, waiting for result
+        trace("getIdSig");
+        flvModel = controller.getIdSig();
+        // give controller references
+        recorder.flvModel = flvModel;
+        recorder.controller = controller;
+        
+        netConnectionManager = NetConnectionManager.getInstance();
+        netConnectionManager.addEventListener(NetStatusEvent.NET_STATUS, 
+            onNetStatus);
+        netConnectionManager.connect(OurStoriesConfig.RED5_NC_URL);
+        
+        
+//        // look for storyid=22 in the html wrapper
+//        try
+//        {
+//            var queryString:String = ExternalInterface.call(
+//                "window.location.search.substring", 1);
+//            var pairs:Array = queryString.split("&");            
+//            var keyValues:Object = new Object();
+//            for each (var pair:String in pairs)
+//            {
+//                var keyValue:Array = pair.split("=");
+//                keyValues[unescape(keyValue[0])] = unescape(keyValue[1]);
+//            }
+//            
+//            // retrieved storyid, now set on the flv model
+//            
+//            var storyId:int = int(keyValues["storyid"]);
+//            if (!isNaN(storyId) && storyId > 0)
+//                flvModel.storyId = storyId;
+//            // else keep -1
+//            
+//        }
+//        catch (e:Error)
+//        {
+//            trace("error!");
+//        }
+
+    }
+    
+    private function onNetStatus(event:NetStatusEvent):void
+    {
+        trace(event.info.code);
+        switch (event.info.code) 
+        {
+            case "NetConnection.Connect.Success":
+                nc = netConnectionManager.getConnection();
+                BindingUtils.bindProperty(recorder, "nc", this, "nc");
+                recorder.setupConnection();
+                
+                break;
+            default:
+                controller.message = "Unable to connect to video server.";
+                Alert.show("Unable to connect to video server.", "Error");
+                break;
+        }
+    }
+    
+]]>
+</mx:Script>
+    <ourstories:VideoRecorder id="recorder"/>
+    <mx:HTTPService id="configXml" resultFormat="e4x"
+        fault="onXmlFault(event)" result="onXmlResult(event)"
+        />
+</mx:Application>

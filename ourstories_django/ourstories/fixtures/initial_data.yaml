@@ -1,0 +1,53 @@
+- model: ourstories.Country
+  pk: 1
+  fields:
+    name: United States
+    isocode: US
+    continent: NA
+
+- model: ourstories.City
+  pk: 1
+  fields:
+    name: Boston
+    country: US
+    latitude: "42.35892"
+    longitude: "-71.05781"
+
+- model: ourstories.City
+  pk: 2
+  fields:
+    name: New York
+    country: US
+    latitude: "40.744136"
+    longitude: "-73.933868"
+
+- model: ourstories.Language
+  pk: 1
+  fields:
+    name: English
+
+- model: ourstories.Language
+  pk: 2
+  fields:
+    name: French
+
+- model: ourstories.Contributor
+  pk: 1
+  fields:
+    name: Shimon Rura
+    age: 27
+    gender: M
+
+- model: ourstories.Story
+  pk: 1
+  fields:
+    title: An Automatically-Generated Starter Story
+    storytype: text
+    summary: "This story was added automatically, so it wouldn't feel so quiet in here."
+    language: 1
+    contributor: 1
+    city: 1
+    country: 1
+    latitude: "42.35892"
+    longitude: "-71.05781"
+    created: "2009-05-01 11:22:34"

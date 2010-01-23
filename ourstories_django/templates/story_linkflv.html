@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block page_title %}OurStories - Record Video for Story: {{ story.title }}{% endblock %}
+
+{% block content %}
+<div class="post">
+    <h1 class="title"><a href="#">{{ story.title }}</a></h1>
+    <p class="byline"><small>Created on {{ story.created }} by <a href="#">{{ story.contributor.name }}</a></small></p>
+    <div class="entry">
+        <p>{{ story.summary }}</p>
+
+
+        <h2>Record Video and/or Audio</h2>
+
+        <!-- pass story.id into flash with ?storyid={{ story.id }} -->
+        <iframe
+            src ="/static/swf/ourstories_recorder.html?storyid={{ story.id }}"
+            width="320" height="400"
+            frameborder="0"
+        ></iframe>
+        
+        <p>Click Settings... then Camera and Microphone tab to select Camera and Microphone.</p>
+        <p>Click Settings... then Privacy tab, then Remember checkbox to remember Our Stories recording access.</p>
+
+    </div>
+
+</div>
+{% endblock content %}
+
+
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}

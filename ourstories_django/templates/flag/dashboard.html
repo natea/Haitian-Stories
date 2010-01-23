@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load comments %}
+
+{% block page_title %}OurStories - Review Flagged Stories{% endblock %}
+{% block body_attrs %}class="wide_content"{% endblock %}
+
+{% block content %}
+
+{% include "flag/_flag_admin_nav.html" %}
+
+{% if flagged_stories %}
+<table border="0" cellpadding="4" cellspacing="0" class="flag_review">
+  {% for s in flagged_stories %}
+  <tr class="{% cycle even,odd %}">
+    <td><a href="{{s.get_absolute_url}}">{{s}}</a></td>
+    <td>
+      <abbr title="{% for f in s.flags %}{{f.flagger_ip}}{% if not forloop.last %}, {% endif %}{% endfor %}">{{s.flags|length}}&nbsp;flag{{s.flags|length|pluralize}}</abbr></td>
+    <td>
+      &middot;
+    </td>
+    <td class="deflag">
+      <a href="{% url flag-story-deflag story_id=s.id %}">clear&nbsp;flags</a>
+    </td>
+    <td>
+      &middot;
+    </td>
+    <td class="unpublish">
+      <a href="{% url flag-story-unpublish story_id=s.id %}">unpublish</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% else %}
+
+<p>No flagged stories require review at this time.  Thank you.</p>
+
+{% endif %}
+
+{% endblock %}
+
+{% block sidebar2 %}
+<ul><li><h2>Flagged Stories</h2>
+    <ul>
+      <li>{{flag_count}} flag{{flag_count|pluralize}} pending review</li>
+      <li>{{flagged_stories|length}} flagged stor{{flagged_stories|length|pluralize:"y,ies"}}</li>
+    </ul>
+    <p>
+      This page shows stories that have been flagged by site visitors.  As a
+      moderator, you may review and act on these flags.  If a flagged story
+      is OK, click <i>clear flags</i> to mark the existing flags as
+      reviewed; the story will not appear on this dashboard unless it is
+      flagged again.  To remove inappropriate content, click
+      <i>unpublish;</i> the story will no longer be visible to the public.
+    </p>
+</li></ul>
+{% endblock %}
+
+{% block sidebar1 %}{% endblock %}

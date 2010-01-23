@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox 
+    xmlns:mx="http://www.adobe.com/2006/mxml"
+    horizontalScrollPolicy="off"
+    verticalScrollPolicy="off"
+    width="320"
+    creationComplete="onCreationComplete(event)"
+    >
+<mx:Script>
+<![CDATA[
+    import mx.events.SliderEvent;
+    import flash.net.navigateToURL;
+    import mx.messaging.config.ConfigMap;
+    import mx.events.FlexEvent;
+    import org.ourstories.controllers.IController;
+    import mx.binding.utils.BindingUtils;
+    import org.ourstories.models.FlvModel;
+
+    // TODO refactor with state pattern
+
+    [Bindable]
+    public var nc:NetConnection;
+    [Bindable]
+    public var flvModel:FlvModel;
+    
+    [Bindable]
+    /**
+     * The number of elapsed seconds of the recording.
+     */
+    public var second:int = 0;
+    public var timer:Timer;
+    
+    private var hasCamera:Boolean;
+    private var hasMicrophone:Boolean;
+    
+    public function set controller(value:IController):void
+    {
+        _controller = value;
+        
+        // bind messageLabel to controller message
+        BindingUtils.bindProperty(messageLabel, "text", _controller, "message");
+        BindingUtils.bindSetter(onMessage, _controller, "message");
+    }
+    public function get controller():IController
+    {
+        return _controller;
+    }
+    private var _controller:IController;
+    
+    
+    private function onMessage(value:String):void
+    {
+        trace("onMessage "+value);
+    }
+    
+    [Bindable]
+    private var isRecording:Boolean = false;
+    
+    [Bindable]
+    /**
+     * Has the user clicked to activate access to camera and microphone.
+     */
+    private var isActivated:Boolean = false;
+    
+    [Bindable]
+    private var isDoneRecording:Boolean = false;
+    
+    [Bindable]
+    /**
+     * Indicates recorder should stop workflow, display unable to connect
+     * to camera and/or microphone.
+     * 
+     * Indicates null camera and null microphone after Camera.getCamera() and 
+     * Microphone.getMicrophone().  Or indicates that user clicked deny access
+     * to camera and/or microphone.
+     */
+    private var isNoCameraNoMicrophone:Boolean = false;
+    
+    private var ns:NetStream;
+    private var camera:Camera;
+    private var microphone:Microphone;
+    private var blackRectange:Sprite;
+
+    
+    public function setupConnection():void 
+    {
+        trace("setupConnection");
+        BindingUtils.bindSetter(onConnected, this, "nc");
+        
+    }
+    private function onConnected(netConnection:NetConnection):void
+    {
+        trace("onConnected");
+        nc = netConnection;
+    }
+    
+    
+    private function onCreationComplete(event:FlexEvent):void
+    {
+        createBlackRectangle();
+    }
+
+    private function createBlackRectangle():void
+    {
+        // http://bugs.adobe.com/jira/browse/SDK-12213
+        // VideoDisplay component does not clear display stream went changing 
+        // source (clear() method missing from API?)
+        blackRectange = new Sprite();
+        blackRectange.graphics.beginFill(0x000000);
+        blackRectange.graphics.drawRect(0,0,320,240);
+        blackRectange.graphics.endFill();
+        
+        video.addChild(blackRectange);        
+    }
+    
+    
+    private function toggleClick():void 
+    {
+        // check for null 
+        if (nc == null) return;
+        
+        if (isActivated)
+        {
+            if (isRecording) 
+            {
+                stopRecording();
+            } 
+            else 
+            {
+                startRecording();
+            }
+            isRecording = !isRecording;
+            
+        }
+        else
+        {
+            activateRecorder();
+        }
+        
+    }
+    
+    private function onAudioOnlyClick(event:MouseEvent):void
+    {
+        trace("onAudioOnlyClick");
+        audioOnlyButton.visible = false;
+        OurStoriesConfig.RECORD_VIDEO = false;
+        toggleClick();
+    }
+    
+    private function onClick(event:MouseEvent):void
+    {
+        trace("onClick");
+        
+        if (isNoCameraNoMicrophone)
+        {
+            return;
+        }
+        
+        if (!isActivated)
+        {
+            // turn on camera and microphone click
+            // turn on microphone only click goes to onAudioOnlyClick
+            audioOnlyButton.visible = false;
+            video.visible = true;
+            OurStoriesConfig.RECORD_VIDEO = true;
+        }
+        
+        if (isDoneRecording)
+        {
+            // final click, view story page in browser
+            
+//            var storyUrl:String = OurStoriesConfig.STORY_URL + flvModel.storyId + "/";
+//            var storyType:String = (hasCamera) ? "video" : "audio";
+
+            // final click, flv recorded, now Django form to complete story
+            var storyRecordUrl:String = OurStoriesConfig.STORY_RECORD_URL + 
+                flvModel.id + "/" + flvModel.sig + "/";
+            var urlRequest:URLRequest = new URLRequest(storyRecordUrl);
+            try
+            {
+                // fyi, this causes popup notification in browser
+                navigateToURL(urlRequest, "_top");
+            }
+            catch (e:Error)
+            {
+                trace("failed to goto story url");
+            }
+        }
+        else
+        {
+            toggleClick();
+        }
+    }
+    
+    
+    private function onMicrophoneActivity(event:ActivityEvent):void
+    {
+//        trace("onMicrophoneActivity "+microphone.activityLevel);
+//        var tempModel3:FlvModel = new FlvModel();
+//        tempModel3.dtrace = "microphone.activityLevel:"+microphone.activityLevel;
+//        _controller.dtrace(tempModel3);
+    }
+    private function onCameraStatus(event:StatusEvent):void
+    {
+        if (event.code == "Camera.Muted")
+        {
+            failNoCameraNoMicrophone();
+        }
+    }
+    private function onMicrophoneStatus(event:StatusEvent):void
+    {
+        if (event.code == "Microphone.Muted")
+        {
+            failNoCameraNoMicrophone();
+        }
+    }
+
+
+    private function onSettingsClick(event:MouseEvent):void
+    {
+        if (isRecording)
+        {
+            return; // no settings during recording
+        }
+        Security.showSettings(SecurityPanel.MICROPHONE);
+    }
+    
+    
+    private function startTimer():void
+    {
+        timer = new Timer(1000, OurStoriesConfig.MAX_RECORD_SEC);
+        timer.addEventListener(TimerEvent.TIMER, onTimer);
+        timer.addEventListener(TimerEvent.TIMER_COMPLETE, onTimerComplete);
+        timer.start();
+    }
+    private function stopTimer():void
+    {
+        timer.stop();
+    }
+    private function onTimer(event:TimerEvent):void
+    {
+        second += 1;
+        trace("onTimer "+second+" "+microphone.activityLevel);
+        
+        var level:int = 0;
+        if (microphone.activityLevel > 0)
+        {
+            level = microphone.activityLevel;
+        }
+        
+        var pixelHeight:int = Math.round(microphoneIndicator.height * (level/100));
+        
+        microphoneIndicator.graphics.clear();
+        microphoneIndicator.graphics.beginFill(0xff0000);
+        microphoneIndicator.graphics.drawRect(0, microphoneIndicator.height - pixelHeight, 
+            microphoneIndicator.width, pixelHeight);
+        microphoneIndicator.graphics.endFill();
+        
+    }
+    private function onTimerComplete(event:TimerEvent):void
+    {
+        trace("onTimerComplete");
+        stopRecording();
+    }
+
+
+    private function failNoCameraNoMicrophone():void
+    {
+        isNoCameraNoMicrophone = true;
+        video.visible = false;
+        flvModel.status = FlvModel.STATUS_FAIL;
+        flvModel.mediaType = FlvModel.MEDIATYPE_NONE;
+        _controller.setStatusType(flvModel);
+//        _controller.linkFlvToStory(flvModel);        
+    }
+    
+    private function startRecording():void
+    {
+        // enable
+        trace("not recording, so toggle to recording");
+
+//        var tempModel4:FlvModel = new FlvModel();
+//        tempModel4.dtrace = "microphone.activityLevel:"+microphone.activityLevel;
+//        _controller.dtrace(tempModel4);
+
+        // send the flvModel.id, which was provided via PyAMF Django
+        // for id 3233, Red5 will record 3233.flv in streams folder
+        // Django knows the streams folder as /static/flv/
+        ns.publish(String(flvModel.id), "record");
+        
+        // start timer for slider
+        startTimer();
+        
+        //video.removeChild(blackRectange);        
+    }
+    
+    private function stopRecording():void
+    {
+        // disable
+        trace("recording, so toggle to not recording");
+        
+        if (microphone)
+        {
+            microphone.removeEventListener(StatusEvent.STATUS, onMicrophoneStatus);
+            microphone.removeEventListener(ActivityEvent.ACTIVITY, onMicrophoneActivity);
+        }
+        if (camera)
+        {
+            camera.removeEventListener(StatusEvent.STATUS, onCameraStatus);
+        }
+        video.attachCamera(null);
+        camera = null
+        microphone = null;
+        ns.close();
+        
+        video.addChild(blackRectange);
+        isDoneRecording = true;
+        
+        // stop timer for slider
+        stopTimer();
+        
+        trace("done, set status")
+        // now set flv status and save back to server
+        flvModel.status = FlvModel.STATUS_RECORDED;
+        flvModel.mediaType = (hasCamera) ? "flvv" : "flva";
+        _controller.setStatusType(flvModel);
+        // link flv to story upon successful recording
+        // also save back hasCamera hasMicrophone to the Django Story model
+//        _controller.linkFlvToStory(flvModel);        
+    }
+
+    private function activateRecorder():void
+    {
+        // not activated yet
+        
+        if (OurStoriesConfig.RECORD_VIDEO)
+        {
+            //Security.showSettings(SecurityPanel.CAMERA)
+            camera = Camera.getCamera();
+        }
+        else
+        {
+            //Security.showSettings(SecurityPanel.MICROPHONE)
+        }
+        microphone = Microphone.getMicrophone();
+        isActivated = true;
+        
+        hasCamera = (camera != null) ? true : false;
+        hasMicrophone = (microphone != null) ? true : false;
+        trace("hasCamera "+hasCamera);
+        trace("hasMicrophone "+hasMicrophone);
+        
+        // trace to django debug runserver
+        var tempModel:FlvModel = new FlvModel();
+        tempModel.dtrace = "hasCamera:"+hasCamera;
+        _controller.dtrace(tempModel);
+        var tempModel2:FlvModel = new FlvModel();
+        tempModel2.dtrace = "hasMicrophone:"+hasMicrophone;
+        _controller.dtrace(tempModel2);
+//        var tempModel3:FlvModel = new FlvModel();
+//        tempModel3.dtrace = "microphone.activityLevel:"+microphone.activityLevel;
+//        _controller.dtrace(tempModel3);
+            
+        // determine media type
+        if (hasCamera)
+        {
+            // a user with unplugged usb webcam could click on record video
+            // mediaType is determined by actual hasCamera, 
+            // from Camera.getCamera()
+            flvModel.mediaType = FlvModel.MEDIATYPE_FLVV;
+        }
+        else if (hasMicrophone)
+        {
+            flvModel.mediaType = FlvModel.MEDIATYPE_FLVA;
+        }
+        else
+        {
+            trace("no camera, no microphone");
+            failNoCameraNoMicrophone();
+            return; // do not continue
+        }
+        
+        if (hasCamera)
+        {
+            camera.addEventListener(StatusEvent.STATUS, onCameraStatus);
+        }
+        if (hasMicrophone)
+        {
+            microphone.addEventListener(StatusEvent.STATUS, 
+                onMicrophoneStatus);
+            microphone.addEventListener(ActivityEvent.ACTIVITY, 
+                onMicrophoneActivity);
+        }
+        
+        // attach camera to video component so user can see camera output
+        video.attachCamera(camera);
+        // attach camera and microphone to ns for recording to red5
+        ns = new NetStream(nc);
+        ns.attachCamera(camera);
+        ns.attachAudio(microphone);    
+        
+        video.removeChild(blackRectange);
+        // okay activated, user sees camera in video, but not recording yet        
+        
+    }
+    
+]]>
+</mx:Script>
+    <mx:Button id="button" width="320" 
+        label="{(isNoCameraNoMicrophone)?
+                    'Unable to Turn On Camera or Microphone':
+                    (isDoneRecording)?
+                        'Thanks! Click to Continue Your Story':
+                        (isActivated)?
+                            (isRecording)?
+                                'Recording! Click to Stop Recording':
+                                'Click to Record':
+                            'Click to Turn On Camera and Microphone'}"
+        click="onClick(event)"
+        enabled="{(flvModel.id != -1)}"
+        />
+    <mx:Button id="audioOnlyButton" width="320"
+        click="onAudioOnlyClick(event)"
+        label="Click to Turn On Microphone"
+        enabled="{(flvModel.id != -1)}"
+        />
+    <mx:VideoDisplay id="video" width="320" height="240"
+        visible="false"
+        />
+    
+    <mx:HBox width="320">
+        <!-- 
+        slider displays the available recording time remaining 
+        enabled=false to prevent user interaction
+        -->
+        <mx:Canvas id="microphoneIndicator" width="10" height="100%"
+            visible="{isRecording}"
+            />
+        <mx:HSlider id="slider" width="100%" 
+            visible="{isRecording}"
+            showTrackHighlight="true" themeColor="#ff0000"
+            enabled="false" allowTrackClick="false"
+            
+            minimum="0"
+            maximum="{OurStoriesConfig.MAX_RECORD_SEC}"
+            value="{second}"
+            />
+        <mx:Button id="settingsButton" label="Settings..." 
+            click="onSettingsClick(event);"/>
+    </mx:HBox>
+    
+    <mx:Label id="messageLabel" width="320" maxWidth="320" 
+        text="" visible="{OurStoriesConfig.DEBUG}"/>
+    <mx:Label id="idLabel" text="{flvModel.id}" visible="{OurStoriesConfig.DEBUG}"/>    
+</mx:VBox>

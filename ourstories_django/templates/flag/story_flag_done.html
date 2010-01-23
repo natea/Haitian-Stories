@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load comments %}
+
+{% block page_title %}OurStories - Story Flagged{% endblock %}
+
+
+{% block content %}
+<h1>Flagged story &ldquo;{{story}}&rdquo;</h1>
+
+<p>Thank you for bringing this story to the attention of a moderator.</p>
+
+<p><a href="{{story.get_absolute_url}}">back to the story</a></p>
+<p><a href="/">back to OurStories home</a></p>
+
+{% endblock %}
+
+
+{% block sidebar2 %}{% endblock %}
+{% block sidebar1 %}{% endblock %}

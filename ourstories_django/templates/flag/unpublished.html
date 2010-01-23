@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load comments %}
+
+{% block page_title %}OurStories - Unpublished Stories{% endblock %}
+{% block body_attrs %}class="wide_content"{% endblock %}
+
+{% block content %}
+
+{% include "flag/_flag_admin_nav.html" %}
+
+{% if stories %}
+<table border="0" cellpadding="4" cellspacing="0" class="flag_review">
+  {% for s in stories %}
+  <tr class="{% cycle even,odd %}">
+    <td><a href="{{s.get_absolute_url}}">{{s}}</a></td>
+    <td>
+      &middot;
+    </td>
+    <td class="republish">
+      <a href="{% url flag-story-republish story_id=s.id %}">republish</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+
+<p>There are no unpublished stories at this time.</p>
+
+{% endif %}
+
+{% endblock %}
+
+{% block sidebar2 %}
+<ul><li><h2>Unpublished Stories</h2>
+    <p>
+        These stories are not visible to the public.  They might still be in
+        production or abandoned by their authors, or a moderator may have
+        unpublished them based on flags.
+    </p>
+</li></ul>
+{% endblock %}
+
+{% block sidebar1 %}{% endblock %}

@@ -1,0 +1,10 @@
+<ul class="subnav">
+  <li {% ifequal subnav_section "flag_dashboard" %}class="active"{% endifequal %}>
+    <a href="{% url flag-dashboard %}">Flags Pending Review</a>
+  </li>
+  <li {% ifequal subnav_section "unpublished" %}class="active"{% endifequal %}>
+    <a href="{% url flag-unpublished %}">Unpublished Stories</a>
+  </li>
+  <li class="rightmost">&nbsp;</li>
+</ul>
+<br style="clear:both"/>

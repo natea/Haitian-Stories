@@ -1,0 +1,21 @@
+- model: storyfeed.Feed
+  pk: 1
+  fields:
+    feed_url: "http://unicef.praekelt.com/ivr.asp"
+    feed_format: pk_ivr
+    is_active: True
+
+- model: storyfeed.Feed
+  pk: 2
+  fields:
+    feed_url: "http://unicef.praekelt.com/speakAfrica.asp"
+    feed_format: pk_sms
+    is_active: True
+
+- model: storyfeed.Feed
+  pk: 3
+  fields:
+    feed_url: "http://unicef.praekelt.com/polio.asp"
+    feed_format: pk_sms
+    is_active: False
+

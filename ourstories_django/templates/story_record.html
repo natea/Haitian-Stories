@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block page_title %}OurStories - Record{% endblock %}
+
+{% block content %}
+<div class="post">
+{% comment %}
+    <h1 class="title"><a href="#">{{ story.title }}</a></h1>
+    <p class="byline"><small>{{story.storytype_verbose}} &middot; Uploaded on {{ story.created }} by <a href="#">{{ story.contributor.name }}</a></small></p>
+{% endcomment %}
+
+    <div class="entry">
+      {# <p>{{ story.summary }}</p> #}
+
+
+        <h2>Record</h2>
+
+        <p>Once you've recorded video or audio, we'll ask you to fill in a
+        title and other information for your story.</p>
+        
+        <iframe
+            src ="/static/swf/ourstories_recorder.html"
+            width="320" height="450"
+            frameborder="0"
+        ></iframe>
+
+    </div>
+
+</div>
+{% endblock content %}
+
+
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}

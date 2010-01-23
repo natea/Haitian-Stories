@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block page_title %}OurStories - Stories for {{ listName }}: {{ listFilterName }}{% endblock %}
+
+{% block topleft_col %}
+<div class="post">
+    <h1 class="title">List of stories for {{ listName }}: {{ listFilterName }}</h1>
+    <div class="entry">
+        {% if results.object_list %}
+        <ul>
+            {% for story in results.object_list %}
+            <li><a href="/story/{{ story.id }}">{{ story.make_title }}</a>, contributed by {{ story.contributor.name }} on {{ story.created }}</li>
+            {% endfor %}
+        </ul>
+        <div class="pagination">
+            <span class="step-links">
+                {% if results.has_previous %}
+                <a href="?{{ paginatorQueryBase }}&page={{ results.previous_page_number }}">previous</a>
+                {% endif %}
+                <span class="current">Page {{ results.number }} of {{ results.paginator.num_pages }}.</span>
+                {% if results.has_next %}
+                <a href="?{{ paginatorQueryBase }}&page={{ results.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+        {% else %}
+        <p>No matching stories found.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock topleft_col %}
+
+{% block content %}
+{% endblock content %}
+
+{% block sidebar1 %}
+{% endblock sidebar1 %}
+
+{% block sidebar2 %}
+{% endblock sidebar2 %}

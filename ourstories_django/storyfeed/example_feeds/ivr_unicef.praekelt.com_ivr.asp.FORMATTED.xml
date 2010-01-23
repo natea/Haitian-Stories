@@ -1,0 +1,1092 @@
+<?xml version="1.0"?>
+<sms_api>
+  <sms>
+    <uniqueid>2815</uniqueid>
+    <msisdn>0793966196</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0793966196-2-044-160609A-074001.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/06/16 07:40:01 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2814</uniqueid>
+    <msisdn>0117932504</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0117932504-2-031-080609C-123949.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/06/08 12:39:49 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2813</uniqueid>
+    <msisdn>0845130407</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0845130407-2-020-050609C-135725.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/06/05 01:57:25 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2812</uniqueid>
+    <msisdn>0849355752</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0849355752-2-092-010609A-125318.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/06/01 12:53:18 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2811</uniqueid>
+    <msisdn>172538857</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-172538857-1-XXX-270509X-060014.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/27 06:00:14 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2810</uniqueid>
+    <msisdn>101819439</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-101819439-1-XXX-270509X-123713.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-101819439-1-XXX-270509X-123713.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/27 12:37:13 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2809</uniqueid>
+    <msisdn>107958024</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-107958024-1-XXX-270509X-151218.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-107958024-1-XXX-270509X-151218.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/27 03:12:18 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2808</uniqueid>
+    <msisdn>191730591</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-191730591-1-XXX-270509X-122256.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-191730591-1-XXX-270509X-122256.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/27 12:22:56 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2807</uniqueid>
+    <msisdn>172538857</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-172538857-1-XXX-270509X-060014.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-172538857-1-XXX-270509X-060014.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/27 06:00:14 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2697</uniqueid>
+    <msisdn>160332070</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-160332070-1-XXX-260509X-193245.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-160332070-1-XXX-260509X-193245.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/26 07:32:45 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2696</uniqueid>
+    <msisdn>100251723</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-100251723-1-XXX-260509X-160720.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-100251723-1-XXX-260509X-160720.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/26 04:07:20 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2695</uniqueid>
+    <msisdn>197838953</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-197838953-2-XXX-260509X-010859.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-197838953-2-XXX-260509X-010859.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>2</language>
+    <timereceived>2009/05/26 01:08:59 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2694</uniqueid>
+    <msisdn>164450862</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-164450862-1-XXX-250509X-235247.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-164450862-1-XXX-250509X-235247.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 11:52:47 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2693</uniqueid>
+    <msisdn>169273162</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-169273162-1-XXX-250509X-200406.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-169273162-1-XXX-250509X-200406.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 08:04:06 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2692</uniqueid>
+    <msisdn>193205262</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-193205262-1-XXX-250509X-200443.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-193205262-1-XXX-250509X-200443.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 08:04:43 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2691</uniqueid>
+    <msisdn>192034683</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-192034683-1-XXX-250509X-165526.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-192034683-1-XXX-250509X-165526.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 04:55:26 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2690</uniqueid>
+    <msisdn>164963622</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-164963622-1-XXX-250509X-150341.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-164963622-1-XXX-250509X-150341.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 03:03:41 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2689</uniqueid>
+    <msisdn>164450862</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-164450862-1-XXX-250509X-135616.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-164450862-1-XXX-250509X-135616.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 01:56:16 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2687</uniqueid>
+    <msisdn>118429275</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-118429275--XXX-250509X-134222.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language/>
+    <timereceived>2009/05/25 01:42:22 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2686</uniqueid>
+    <msisdn>163108182</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-163108182-1-XXX-250509X-114349.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-163108182-1-XXX-250509X-114349.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 11:43:49 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2685</uniqueid>
+    <msisdn>162950415</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-162950415-1-XXX-250509X-101704.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-162950415-1-XXX-250509X-101704.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/25 10:17:04 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2682</uniqueid>
+    <msisdn>192485904</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-192485904-1-XXX-240509X-222740.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-192485904-1-XXX-240509X-222740.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/24 10:27:40 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2681</uniqueid>
+    <msisdn>191805194</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-191805194-1-XXX-240509X-210721.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-191805194-1-XXX-240509X-210721.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/24 09:07:21 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2680</uniqueid>
+    <msisdn>192551683</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-192551683-1-XXX-240509X-192453.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-192551683-1-XXX-240509X-192453.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/24 07:24:53 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2679</uniqueid>
+    <msisdn>108050493</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-108050493-1-XXX-240509X-180037.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-108050493-1-XXX-240509X-180037.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/24 06:00:37 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2678</uniqueid>
+    <msisdn>196699093</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-196699093-1-XXX-240509X-165718.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-196699093-1-XXX-240509X-165718.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/24 04:57:18 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2677</uniqueid>
+    <msisdn>104682413</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-104682413-1-XXX-240509X-151935.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-104682413-1-XXX-240509X-151935.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/24 03:19:35 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2676</uniqueid>
+    <msisdn>104682413</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-104682413-1-XXX-240509X-095438.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-104682413-1-XXX-240509X-095438.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/24 09:54:38 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2675</uniqueid>
+    <msisdn>100432814</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-100432814-1-XXX-230509X-232138.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-100432814-1-XXX-230509X-232138.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/23 11:21:38 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2674</uniqueid>
+    <msisdn>162928711</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-162928711-1-XXX-230509X-175410.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-162928711-1-XXX-230509X-175410.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/23 05:54:10 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2673</uniqueid>
+    <msisdn>193975889</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-193975889-1-XXX-230509X-170250.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-193975889-1-XXX-230509X-170250.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/23 05:02:50 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2672</uniqueid>
+    <msisdn>101588824</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-101588824-1-XXX-230509X-150754.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-101588824-1-XXX-230509X-150754.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/23 03:07:54 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2671</uniqueid>
+    <msisdn>107992587</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-107992587-1-XXX-230509X-133252.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-107992587-1-XXX-230509X-133252.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/23 01:32:52 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2670</uniqueid>
+    <msisdn>161908315</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-161908315-1-XXX-230509X-131628.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-161908315-1-XXX-230509X-131628.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/23 01:16:28 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2669</uniqueid>
+    <msisdn>108306920</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-108306920-1-XXX-220509X-214452.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-108306920-1-XXX-220509X-214452.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/22 09:44:52 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2668</uniqueid>
+    <msisdn>168996042</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-168996042-1-XXX-220509X-192137.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-168996042-1-XXX-220509X-192137.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/22 07:21:37 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2667</uniqueid>
+    <msisdn>103177114</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-103177114-1-XXX-220509X-191013.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-103177114-1-XXX-220509X-191013.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/22 07:10:13 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2666</uniqueid>
+    <msisdn>194310561</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-194310561-1-XXX-220509X-100451.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-194310561-1-XXX-220509X-100451.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/22 10:04:51 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2665</uniqueid>
+    <msisdn>167092634</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-167092634-1-XXX-220509X-093421.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-167092634-1-XXX-220509X-093421.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/22 09:34:21 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2664</uniqueid>
+    <msisdn>0112930000</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0112930000-2-010-220509B-080623.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/05/22 08:06:23 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2663</uniqueid>
+    <msisdn>100981948</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-100981948-1-XXX-210509X-222132.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-100981948-1-XXX-210509X-222132.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 10:21:32 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2662</uniqueid>
+    <msisdn>167464373</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-167464373-1-XXX-210509X-200440.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-167464373-1-XXX-210509X-200440.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 08:04:40 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2661</uniqueid>
+    <msisdn>163970440</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-163970440-1-XXX-210509X-135302.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-163970440-1-XXX-210509X-135302.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 01:53:02 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2660</uniqueid>
+    <msisdn>163970440</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-163970440-1-XXX-210509X-135207.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-163970440-1-XXX-210509X-135207.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 01:52:07 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2659</uniqueid>
+    <msisdn>172677977</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-172677977-2-XXX-210509X-125712.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-172677977-2-XXX-210509X-125712.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>2</language>
+    <timereceived>2009/05/21 12:57:12 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2658</uniqueid>
+    <msisdn>128007577</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-128007577-1-XXX-210509X-125632.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-128007577-1-XXX-210509X-125632.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 12:56:32 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2657</uniqueid>
+    <msisdn>172677977</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-172677977-1-XXX-210509X-125608.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-172677977-1-XXX-210509X-125608.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 12:56:08 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2656</uniqueid>
+    <msisdn>160446154</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-160446154-1-XXX-200509X-153138.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-160446154-1-XXX-200509X-153138.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/20 03:31:38 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2655</uniqueid>
+    <msisdn>106951847</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-106951847-1-XXX-210509X-110921.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-106951847-1-XXX-210509X-110921.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 11:09:21 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2654</uniqueid>
+    <msisdn>104494170</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-104494170-1-XXX-210509X-110807.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-104494170-1-XXX-210509X-110807.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/21 11:08:07 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2653</uniqueid>
+    <msisdn>169430102</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-169430102-1-XXX-190509X-210820.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-169430102-1-XXX-190509X-210820.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/19 09:08:20 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2652</uniqueid>
+    <msisdn>144378006</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-144378006--XXX-190509X-194354.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language/>
+    <timereceived>2009/05/19 07:43:54 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2651</uniqueid>
+    <msisdn>0119331753</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0119331753-2-026-200509B-130636.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/05/20 01:06:36 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2650</uniqueid>
+    <msisdn>0119331753</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0119331753-2-052-200509B-130436.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/05/20 01:04:36 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2649</uniqueid>
+    <msisdn>0119331753</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0119331753-2-058-200509B-130351.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/05/20 01:03:51 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2648</uniqueid>
+    <msisdn>0119331754</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0119331754-2-049-200509B-130252.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/05/20 01:02:52 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2647</uniqueid>
+    <msisdn>0119331754</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/SA-0119331754-2-074-200509A-130021.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>SA</country>
+    <language>2</language>
+    <timereceived>2009/05/20 01:00:21 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2646</uniqueid>
+    <msisdn>105667019</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-105667019-2-XXX-140509X-103424.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-105667019-2-XXX-140509X-103424.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>2</language>
+    <timereceived>2009/05/14 10:34:24 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2645</uniqueid>
+    <msisdn>106764788</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-106764788-1-XXX-190509X-064439.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-106764788-1-XXX-190509X-064439.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/19 06:44:39 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2644</uniqueid>
+    <msisdn>117500282</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-117500282-2-XXX-140509X-122554.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>2</language>
+    <timereceived>2009/05/14 12:25:54 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2643</uniqueid>
+    <msisdn>111494293</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-111494293--XXX-180509X-142012.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language/>
+    <timereceived>2009/05/18 02:20:12 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2642</uniqueid>
+    <msisdn>103490837</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-103490837-1-XXX-190509X-121319.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-103490837-1-XXX-190509X-121319.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/19 12:13:19 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2641</uniqueid>
+    <msisdn>103490837</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-103490837-1-XXX-190509X-121319.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-103490837-1-XXX-190509X-121319.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/19 12:13:19 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2640</uniqueid>
+    <msisdn>119299534</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-119299534--XXX-170509X-191755.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language/>
+    <timereceived>2009/05/17 07:17:55 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2639</uniqueid>
+    <msisdn>194605716</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-194605716-1-XXX-190509X-140621.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-194605716-1-XXX-190509X-140621.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/19 02:06:21 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2638</uniqueid>
+    <msisdn>175249986</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-175249986-1-XXX-150509X-232654.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-175249986-1-XXX-150509X-232654.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 11:26:54 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2637</uniqueid>
+    <msisdn>195184039</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-195184039-1-XXX-180509X-172137.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-195184039-1-XXX-180509X-172137.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/18 05:21:37 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2636</uniqueid>
+    <msisdn>175249986</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-175249986-1-XXX-150509X-232654.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-175249986-1-XXX-150509X-232654.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 11:26:54 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2635</uniqueid>
+    <msisdn>180892836</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-180892836-1-XXX-170509X-095652.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-180892836-1-XXX-170509X-095652.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/17 09:56:52 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2634</uniqueid>
+    <msisdn>106793049</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-106793049-1-XXX-180509X-025501.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-106793049-1-XXX-180509X-025501.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/18 02:55:01 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2633</uniqueid>
+    <msisdn>192529085</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-192529085-1-XXX-180509X-041425.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-192529085-1-XXX-180509X-041425.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/18 04:14:25 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2632</uniqueid>
+    <msisdn>174944330</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-174944330-1-XXX-160509X-132046.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-174944330-1-XXX-160509X-132046.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/16 01:20:46 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2631</uniqueid>
+    <msisdn>123051176</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-123051176-1-XXX-180509X-073610.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-123051176-1-XXX-180509X-073610.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/18 07:36:10 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2630</uniqueid>
+    <msisdn>167285497</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-167285497-1-XXX-170509X-111715.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-167285497-1-XXX-170509X-111715.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/17 11:17:15 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2629</uniqueid>
+    <msisdn>106764788</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-106764788-1-XXX-190509X-064439.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-106764788-1-XXX-190509X-064439.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/19 06:44:39 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2628</uniqueid>
+    <msisdn>161562720</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-161562720-1-XXX-180509X-180659.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-161562720-1-XXX-180509X-180659.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/18 06:06:59 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2627</uniqueid>
+    <msisdn>191308632</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-191308632-1-XXX-150509X-233054.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-191308632-1-XXX-150509X-233054.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 11:30:54 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2626</uniqueid>
+    <msisdn>160076126</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-160076126-1-XXX-160509X-103130.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-160076126-1-XXX-160509X-103130.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/16 10:31:30 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2625</uniqueid>
+    <msisdn>169920847</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-169920847-1-XXX-180509X-104414.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-169920847-1-XXX-180509X-104414.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/18 10:44:14 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2624</uniqueid>
+    <msisdn>191978346</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-191978346-1-XXX-170509X-140636.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-191978346-1-XXX-170509X-140636.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/17 02:06:36 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2623</uniqueid>
+    <msisdn>168301750</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-168301750-1-XXX-170509X-185635.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-168301750-1-XXX-170509X-185635.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/17 06:56:35 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2622</uniqueid>
+    <msisdn>163692612</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-163692612-1-XXX-170509X-201137.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-163692612-1-XXX-170509X-201137.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/17 08:11:37 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2621</uniqueid>
+    <msisdn>163046827</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-163046827-1-XXX-170509X-143609.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-163046827-1-XXX-170509X-143609.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/17 02:36:09 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2620</uniqueid>
+    <msisdn>128377631</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-128377631-1-XXX-160509X-174207.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-128377631-1-XXX-160509X-174207.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/16 05:42:07 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2619</uniqueid>
+    <msisdn>104878721</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-104878721-1-XXX-160509X-110921.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-104878721-1-XXX-160509X-110921.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/16 11:09:21 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2618</uniqueid>
+    <msisdn>163299156</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-163299156-1-XXX-150509X-163044.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-163299156-1-XXX-150509X-163044.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 04:30:44 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2617</uniqueid>
+    <msisdn>107746181</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-107746181-1-XXX-150509X-200642.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-107746181-1-XXX-150509X-200642.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 08:06:42 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2616</uniqueid>
+    <msisdn>162669572</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-162669572-1-XXX-150509X-213413.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-162669572-1-XXX-150509X-213413.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 09:34:13 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2615</uniqueid>
+    <msisdn>164814335</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-164814335-1-XXX-150509X-151050.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-164814335-1-XXX-150509X-151050.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 03:10:50 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2614</uniqueid>
+    <msisdn>107746181</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-107746181-1-XXX-150509X-114059.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-107746181-1-XXX-150509X-114059.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/15 11:40:59 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2613</uniqueid>
+    <msisdn>128007577</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-128007577-1-XXX-140509X-094027.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-128007577-1-XXX-140509X-094027.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 09:40:27 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2612</uniqueid>
+    <msisdn>169208305</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-169208305-1-XXX-140509X-192330.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-169208305-1-XXX-140509X-192330.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 07:23:30 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2611</uniqueid>
+    <msisdn>103324877</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-103324877-1-XXX-140509X-100942.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-103324877-1-XXX-140509X-100942.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 10:09:42 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2610</uniqueid>
+    <msisdn>192362232</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-192362232-1-XXX-140509X-151859.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-192362232-1-XXX-140509X-151859.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 03:18:59 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2609</uniqueid>
+    <msisdn>172677977</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-172677977-1-XXX-140509X-115528.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-172677977-1-XXX-140509X-115528.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 11:55:28 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2608</uniqueid>
+    <msisdn>117500282</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-117500282-1-XXX-140509X-124523.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 12:45:23 PM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2607</uniqueid>
+    <msisdn>168464613</msisdn>
+    <status>2</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-168464613-1-XXX-140509X-112753.wav</wav>
+    <mp3>http://www.electricmail.co.za/unicef/Egypt-168464613-1-XXX-140509X-112753.mp3</mp3>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 11:27:53 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2606</uniqueid>
+    <msisdn>187724870</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-187724870-1-XXX-140509X-015112.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 01:51:12 AM</timereceived>
+  </sms>
+  <sms>
+    <uniqueid>2605</uniqueid>
+    <msisdn>127424450</msisdn>
+    <status>1</status>
+    <wav>http://www.electricmail.co.za/unicef/Egypt-127424450-1-XXX-140509X-044130.wav</wav>
+    <mp3/>
+    <question>Africa wants to know what you think! Please finish this sentence..."What I like about my country is..."</question>
+    <country>Egypt</country>
+    <language>1</language>
+    <timereceived>2009/05/14 04:41:30 AM</timereceived>
+  </sms>
+</sms_api>

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block page_title %}OurStories - Upload Video{% endblock %}
+
+{% block content %}
+<div class="post">
+{% comment %}
+    <h1 class="title"><a href="#">{{ story.title }}</a></h1>
+    <p class="byline"><small>{{story.storytype_verbose}} &middot; Uploaded on {{ story.created }} by <a href="#">{{ story.contributor.name }}</a></small></p>
+{% endcomment %}
+
+    <div class="entry">
+      {# <p>{{ story.summary }}</p> #}
+
+
+        <h2>Upload Video File</h2>
+
+        Once you've uploaded your video file, we'll ask you to fill in a
+        title and other information for your story.
+
+        <form action="{{youtube_upload_url}}?nexturl={{request.build_absolute_uri|urlencode}}"
+              method="post"
+              enctype="multipart/form-data">
+
+          {% if errors %}
+          <ul class="errorlist">
+            {% for e in errors %}
+            <li>{{e}}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          <input type="file" name="file"/>
+          <input type="hidden" name="token" value="{{youtube_upload_token}}"/>
+          <input type="submit" value="Go&nbsp;&raquo;" />
+
+        </form>
+
+    </div>
+
+</div>
+{% endblock content %}
+
+
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}
