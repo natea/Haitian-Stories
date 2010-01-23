@@ -36,7 +36,11 @@ def storiesOnMap(request):
     response = []
     for story in storiesToDisplay:
         if str(story.id) not in currentlyDisplayedStoryIds:
-            contribName = story.contributor.name if story.contributor else None
+
+            if story.contributor:
+		contribName = story.contributor.name
+            else: 
+                contribName = None
             langName = story.language.name if story.language else None
             response.append({'id': story.id,
                              'title': story.title,

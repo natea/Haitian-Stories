@@ -267,7 +267,10 @@ class StoryFlag(models.Model):
 
     
     def __unicode__(self):
-        rev = ("reviewed by %s" % self.reviewed_by.username) if self.reviewed_by else "UNREVIEWED"
+	if self.reviewed_by:
+        	rev = ("reviewed by %s" % self.reviewed_by.username) 
+	else:
+		rev = "UNREVIEWED"
 
         return "[%s] flag on %s from %s" % (
             rev,

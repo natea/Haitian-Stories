@@ -11,7 +11,10 @@ import urllib
 from xml.dom import minidom
 from datetime import datetime
 import time
-import email.utils
+try:
+	import email.utils as emailutils
+except:
+	import email26.utils as emailutils
 
 from ourstories.models import Story, Country, Contributor
 
@@ -250,7 +253,7 @@ class DropioRssIVRHandler(XMLFeedHandlerBase):
                 print pubDate
                 print "===================================="
 
-                pubdt = datetime.fromtimestamp(email.utils.mktime_tz(email.utils.parsedate_tz(pubDate)))
+                pubdt = datetime.fromtimestamp(emailutils.mktime_tz(emailutils.parsedate_tz(pubDate)))
 
                 fi,created = FeedItem.objects.get_or_create(
                     feed=self.feed,
