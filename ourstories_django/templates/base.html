@@ -1,3 +1,4 @@
+{% load i18n %} 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -7,7 +8,7 @@
 
     <meta name="keywords" content="{% block meta_keywords %}HaitianStories stories unicef mizizi{% endblock %}" />
     <meta name="description" content="{% block meta_description %}{% endblock %}" />
-    <title>{% block page_title %}HaitianStories{% endblock %}</title>
+    <title>{% block page_title %}{% trans "HaitianStories" %}{% endblock %}</title>
     {% block custom_head_contents %}{% endblock %}
 </head>
 <body {% block body_attrs %}{% endblock %}>
@@ -16,10 +17,10 @@
     <!-- start menu -->
       {% if user.is_staff %}
       <div class="staff_controls">
-        Welcome, {{user}}! &nbsp;
-        <a href="/admin/">admin</a> &middot;
-        <a href="{% url flag-dashboard %}">review flags</a> &middot;
-        <a href="/admin/logout/">logout</a>
+        {% trans "Welcome" %}, {{user}}! &nbsp;
+        <a href="/admin/">{% trans "admin" %}</a> &middot;
+        <a href="{% url flag-dashboard %}">{% trans "review flags" %}</a> &middot;
+        <a href="/admin/logout/">{% trans "logout" %}</a>
       </div>
       {% endif %}
 
@@ -27,24 +28,24 @@
       
 
         <ul>
-            <li{% if menuHomeActive %} class="current_page_item"{% endif %}><a href="/">Home</a></li>
+            <li{% if menuHomeActive %} class="current_page_item"{% endif %}><a href="/">{% trans "Home" %}</a></li>
 
-            <li{% if menuAdd2Active %} class="current_page_item"{% endif %}><a href="{% url story-add %}">Add Your Story</a></li>
-            <li{% if menuSearchActive %} class="current_page_item"{% endif %}><a href="/search/">Search</a></li>
-            <li{% if menuAboutActive %} class="current_page_item"{% endif %}><a href="/about/">About</a></li>
+            <li{% if menuAdd2Active %} class="current_page_item"{% endif %}><a href="{% url story-add %}">{% trans "Add Your Story" %}</a></li>
+            <li{% if menuSearchActive %} class="current_page_item"{% endif %}><a href="/search/">{% trans "Search" %}</a></li>
+            <li{% if menuAboutActive %} class="current_page_item"{% endif %}><a href="/about/">{% trans "About" %}</a></li>
         </ul>
     </div>
     <!-- end menu -->
     <!-- start header -->
     <div id="header">
         <div id="logo">
-            <h1>{% block header_title %}<a href="/"><span style="color:#0c419a">Haitian</span><span style="color:#ff0000">Stories</span></a>{% endblock %}</h1>
+            <h1>{% block header_title %}<a href="/">{% blocktrans %}<span style="color:#0c419a">Haitian</span><span style="color:#ff0000">Stories</span></a>{% endblocktrans %}{% endblock %}</h1>
             <p>{% block header_slogan %}The stories of Haiti{% endblock %}</p>
         </div>
         <div id="search">
             <form method="get" action="/search">
                 <fieldset>
-                <legend>Quick Search</legend>
+                <legend>{% trans "Quick Search" %}</legend>
                 <input id="q" type="text" name="q" value="" />
                 <input id="x" type="submit" value="Search" />
                 </fieldset>
@@ -66,18 +67,18 @@
                 {% block sidebar2 %}
                 <ul>
                     <li>
-                        <h2>Current stats</h2>
+                        <h2>{% trans "Current stats" %}</h2>
                         <ul>
                             {% block statistics %}
-                            Not yet available
+                            {% trans "Not yet available" %}
                             {% endblock statistics %}
                         </ul>
                     </li>
                     <li>
-                        <h2>Languages</h2>
+                        <h2>{% trans "Languages" %}</h2>
                         <ul>
                             {% block languages %}
-                            None
+                            {% trans "None" %}
                             {% endblock languages %}
                         </ul>
                     </li>
@@ -96,26 +97,26 @@
                 {% block sidebar1 %}
                 <ul>
                     <li>
-                        <h2>Recent Stories</h2>
+                        <h2>{% trans "Recent Stories" %}</h2>
                         <ul>
                             {% block recent_stories %}
-                            None
+                            {% trans "None" %}
                             {% endblock recent_stories %}
                         </ul>
                     </li>
                     <li>
-                        <h2>Recent Comments</h2>
+                        <h2>{% trans "Recent Comments" %}</h2>
                         <ul>
                             {% block recent_comments %}
-                            None
+                            {% trans "None" %}
                             {% endblock recent_comments %}
                         </ul>
                     </li>
                     <li>
-                        <h2>Categories</h2>
+                        <h2>{% trans "Categories" %}</h2>
                         <ul>
                             {% block categories %}
-                            None
+                            {% trans "None" %}
                             {% endblock categories %}
                         </ul>
                     </li>
@@ -133,7 +134,7 @@
     <div id="footer">
         <p>
 
-          &copy;2009-2010 UNICEF &nbsp;&middot;&nbsp; CSS adapted from original design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+          &copy;2009 {% trans "UNICEF" %} &nbsp;&middot;&nbsp; {% trans "CSS adapted from original design by" %} <a href="http://www.freecsstemplates.org/">{% trans "Free CSS Templates" %}</a>.</p>
     </div>
     <!-- end footer -->
 </div>
