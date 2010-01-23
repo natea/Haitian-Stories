@@ -5,9 +5,9 @@
     <link type="text/css" rel="stylesheet" href="/static/css/glazed.css" media="screen" />
     <script src="/static/flowplayer/flowplayer-3.1.0.min.js"></script>
 
-    <meta name="keywords" content="{% block meta_keywords %}ourstories stories unicef mizizi{% endblock %}" />
+    <meta name="keywords" content="{% block meta_keywords %}HaitianStories stories unicef mizizi{% endblock %}" />
     <meta name="description" content="{% block meta_description %}{% endblock %}" />
-    <title>{% block page_title %}OurStories{% endblock %}</title>
+    <title>{% block page_title %}HaitianStories{% endblock %}</title>
     {% block custom_head_contents %}{% endblock %}
 </head>
 <body {% block body_attrs %}{% endblock %}>
@@ -38,8 +38,8 @@
     <!-- start header -->
     <div id="header">
         <div id="logo">
-            <h1>{% block header_title %}<a style="color: #e43c15" href="/">OurStories</a>{% endblock %}</h1>
-            <p>{% block header_slogan %}Tell the world your story{% endblock %}</p>
+            <h1>{% block header_title %}<a href="/"><span style="color:#0c419a">Haitian</span><span style="color:#ff0000">Stories</span></a>{% endblock %}</h1>
+            <p>{% block header_slogan %}The stories of Haiti{% endblock %}</p>
         </div>
         <div id="search">
             <form method="get" action="/search">
