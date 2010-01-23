@@ -124,6 +124,7 @@ hr {
 
 #menu {
 	height: 50px;
+	background-color:#0c419a
 }
 
 #menu ul {
@@ -147,7 +148,7 @@ hr {
 }
 
 #menu a:hover {
-	background: #333333;
+	background: #000066;
 	color: #FFFFFF;
 }
 

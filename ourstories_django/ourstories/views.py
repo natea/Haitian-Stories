@@ -85,8 +85,9 @@ def story_record(request):
     """Record video or audio to be posted with a story."""
     errors = []
     
-    return render_to_response('story_record.html', 
-                              {#'story': story,
+    return render_to_response('story_record.html',
+                              {'menuAdd2Active': True,
+                               #'story': story,
                                'errors': errors,
                               },
                               RequestContext(request))
@@ -136,7 +137,8 @@ def story_upload(request):
     youtube_upload_url, youtube_upload_token = youtube.getBrowserUploadInfo()
 
     return render_to_response('story_upload.html', 
-                              {#'story': story,
+                              {'menuAdd2Active': True,
+                               #'story': story,
                                'errors': errors,
                                'youtube_upload_url': youtube_upload_url,
                                'youtube_upload_token': youtube_upload_token,
@@ -253,7 +255,7 @@ def about(request):
 
 def story_add(request):
     return render_to_response("story_add.html",
-                              {},
+                              {'menuAdd2Active': True},
                               RequestContext(request))
 
 def story_add_form(request, postingtype, _link=None, _storytype=None):
