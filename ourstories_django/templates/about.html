@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block page_title %}HaitianStories - About{% endblock %}
 
@@ -7,10 +8,12 @@
     <h1 class="title">About Haitian Stories</h1>
     <div class="entry">
 
+{% blocktrans %}
       <p>HaitianStories is a project that was started at the <a href="http://wiki.crisiscommons.org/wiki/Boston01232010">CrisisCamp Boston</a> in response to the crisis in Haiti. HaitianStories is built on top of <a href="http://www.ourstories.org">OurStories</a>, an open-source collaboration of UNICEF and partners designed to collect stories from young people via computer with internet connection or mobile phone. Once stories are collected they are shown on a map and can be sorted by age, language, country of origin, theme, etc.</p>
       <p>You can contact the project lead Nate Aune at natea (at) jazkarta (dot) com.
+{% endblocktrans %}
 
-      <p><a href="{% url story-add %}">Please join us in recording your story today.</a></p>
+      <p><a href="{% url story-add %}">{% trans "Please join us in recording your story today." %}</a></p>
     </div>
 </div>
 {% endblock topleft_col %}
