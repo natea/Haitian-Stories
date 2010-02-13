@@ -2,10 +2,10 @@
 <ourstories_config>
 
     <red5_nc_url>rtmp:/oflaDemo</red5_nc_url>
-    <amf_nc_url>http://ourstories-staging.jazkarta.com/gateway/</amf_nc_url>
-    <flv_url>http://ourstories-staging.jazkarta.com/static/flv/</flv_url>
-    <story_url>http://ourstories-staging.jazkarta.com/story/</story_url>
-    <story_record_url>http://ourstories-staging.jazkarta.com/story/record/</story_record_url>
+    <amf_nc_url>http://haitianstories.org/gateway/</amf_nc_url>
+    <flv_url>http://haitianstories.org/static/flv/</flv_url>
+    <story_url>http://haitianstories.org/story/</story_url>
+    <story_record_url>http://haitianstories.org/story/record/</story_record_url>
     <max_record_sec>180</max_record_sec>
     <debug>0</debug>
     
