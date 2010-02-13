@@ -1,3 +1,9 @@
+Setting up an Ubuntu Karmic server
+==================================
+
+apt-get update
+apt-get install apache2 libapache2-mod-python python2.6-dev imagemagick mencoder ffmpeg
+
 ourstories_django
 =================
 
@@ -33,3 +39,60 @@ Other misc utilities
 --------------------
 The "utils" directory in this directory contains some Python utilities used
 during development; they have no use at run-time.
+
+Load geodata
+------------
+
+Import the countries and cities. You'll still need to manually add the languages and categories.
+
+    $ cd haitianstories/geodata
+    $ gunzip countryInfo.txt.gz
+    $ gunzip cities15000.txt.gz
+    $ ./manage.py load_geodata ../geodata/countryInfo.txt ../geodata/cities15000.txt
+    
+Youtube configuration
+---------------------
+
+Go into settings.py and change the following settings::
+
+    YOUTUBE_EMAIL = 'someuser@somedomain.com'
+    YOUTUBE_PASSWORD = 'somepassword'
+    YOUTUBE_SOURCE = 'yourappid'
+    YOUTUBE_CLIENT_ID = '' # not used anymore
+    YOUTUBE_DEVELOPER_KEY = 'yourdeveloperkey'
+
+Picasa configuration
+--------------------
+
+Picasa is used for the thumb
+Go into settings.py and change the following settings::
+
+    PICASA_USERNAME = 'someuser@somedomain.com'
+    PICASA_PASSWORD = 'somepassword'
+
+Set up the streaming from Red5
+------------------------------
+
+Once Red5 is set up, go into the static dir and make a symlink to the Red5 streams dir::
+
+    $ cd /var/local/haitianstories/ourstories_django/static
+    $ ln -s /opt/red5/webapps/oflaDemo/streams/ flv
+    
+Configure the URLs for the SWF player
+-------------------------------------
+
+Edit the file /var/local/haitianstories/ourstories_django/static/swf/ourstories_config.xml::
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <ourstories_config>
+
+        <red5_nc_url>rtmp:/oflaDemo</red5_nc_url>
+        <amf_nc_url>http://haitianstories.org/gateway/</amf_nc_url>
+        <flv_url>http://haitianstories.org/static/flv/</flv_url>
+        <story_url>http://haitianstories.org/story/</story_url>
+        <story_record_url>haitianstories.org/story/record/</story_record_url>
+        <max_record_sec>180</max_record_sec>
+        <debug>0</debug>
+        
+    </ourstories_config>
+    
